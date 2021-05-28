@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+body {
+  padding: 50px;
+  font-family: "Odibee Sans", cursive;
+}
+
+h1 {
+  font-family: 'Odibee Sans', cursive;
+
+}
+
+a {
+  color: #00B7FF;
+}
