@@ -6,7 +6,7 @@ var env = require('dotenv');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Login' });
+  res.render('landing_page', { title: 'Landing Page' });
 });
 
 router.post('/login' , async function (req, res, next) {
@@ -19,4 +19,7 @@ router.post('/login' , async function (req, res, next) {
   res.render('login_page', {title: 'Welcome'})
 
 });
+
+
+
 module.exports = router;
