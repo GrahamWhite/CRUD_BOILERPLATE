@@ -16,5 +16,18 @@
     "mysql": "^2.18.1",
     "pug": "2.0.0-beta11",
     "tedious": "^11.0.8"
-  }
+  },
+  "description": "A boiler plate for full-stack development.  Node JS and AWS",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrahamWhite/CRUD_BOILERPLATE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GrahamWhite/CRUD_BOILERPLATE/issues"
+  },
+  "homepage": "https://github.com/GrahamWhite/CRUD_BOILERPLATE#readme"
 }
