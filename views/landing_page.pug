@@ -6,11 +6,15 @@ link(rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css')
 link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway')
 link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 style.
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    body,h1,h2,h3,h4,h5,h6 {
+        font-family: "Raleway", sans-serif;
+        color: #FF2173;
+    }
     body, html {
         height: 100%;
         line-height: 1.8;
-        background: #363636;
+        background: #f5f5f5;
+        color: black;
     }
     /* Full height image header */
     .bgimg-1 {
@@ -18,6 +22,7 @@ style.
         background-size: cover;
         background-image: url("/w3images/mac.jpg");
         min-height: 100%;
+        color: #1A1A1A;
     }
     .w3-bar .w3-button {
         padding: 16px;
@@ -60,17 +65,15 @@ nav#mySidebar.w3-sidebar.w3-bar-block.w3-black.w3-card.w3-animate-left.w3-hide-m
     a.w3-bar-item.w3-button(href='#contact' onclick='w3_close()') CONTACT
 // Header with full-height image
 header#home.bgimg-1.w3-display-container.w3-grayscale-min
-    .w3-display-left.w3-text-white(style='padding:48px')
+    .w3-display-left(style='padding:48px')
         section Content for New section Tag Goes Here
-        span.w3-jumbo.w3-hide-small
-            img(src='images/under_construction.png' alt='under_construction')
-            | Start something that matters
+        span.w3-jumbo.w3-hide-small Graham White
         br
-        span.w3-xxlarge.w3-hide-large.w3-hide-medium Start something that matters
+        span.w3-xxlarge.w3-hide-large.w3-hide-medium My Slogan
         br
-        span.w3-large Stop wasting valuable time with projects that just isn&apos;t you.
+        span.w3-large Full Stack Development
         p
-            a.w3-button.w3-white.w3-padding-large.w3-large.w3-margin-top.w3-opacity.w3-hover-opacity-off(href='#about') Learn more and start today
+            a.w3-button.w3-white.w3-padding-large.w3-large.w3-margin-top.w3-opacity.w3-hover-opacity-off(href='#about') Complete Web Solutions for all Your Business Needs
     .w3-display-bottomleft.w3-text-grey.w3-large(style='padding:24px 48px')
         i.fa.fa-facebook-official.w3-hover-opacity
         i.fa.fa-instagram.w3-hover-opacity
@@ -79,28 +82,28 @@ header#home.bgimg-1.w3-display-container.w3-grayscale-min
         i.fa.fa-twitter.w3-hover-opacity
         i.fa.fa-linkedin.w3-hover-opacity
 // About Section
-#about.w3-container(style='padding:128px 16px')
-    h3.w3-center ABOUT THE COMPANY
+#about.w3-container(style='padding: 128px 16px; color: #00625A;')
+    h3.w3-center My Skills&nbsp;&nbsp;
     p.w3-center.w3-large Key features of our company
     .w3-row-padding.w3-center(style='margin-top:64px')
         .w3-quarter
             i.fa.fa-desktop.w3-margin-bottom.w3-jumbo.w3-center
-            p.w3-large Responsive
+            p.w3-large Web Development
             p
                 | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
         .w3-quarter
             i.fa.fa-heart.w3-margin-bottom.w3-jumbo
-            p.w3-large Passion
+            p.w3-large Releational Database Design&nbsp;&nbsp;
             p
                 | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
         .w3-quarter
             i.fa.fa-diamond.w3-margin-bottom.w3-jumbo
-            p.w3-large Design
+            p.w3-large UI/UX Design
             p
                 | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
         .w3-quarter
             i.fa.fa-cog.w3-margin-bottom.w3-jumbo
-            p.w3-large Support
+            p.w3-large Network Design and Management&nbsp;&nbsp;
             p
                 | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 // Promo Section - "We know design"
@@ -120,14 +123,14 @@ header#home.bgimg-1.w3-display-container.w3-grayscale-min
             img.w3-image.w3-round-large(src='/w3images/phone_buildings.jpg' alt='Buildings' width='700' height='394')
 // Team Section
 #team.w3-container(style='padding:128px 16px')
-    h3.w3-center THE TEAM
+    h3.w3-center &nbsp;
     p.w3-center.w3-large The ones who runs this company
     .w3-row-padding.w3-grayscale(style='margin-top:64px')
         .w3-col.l3.m6.w3-margin-bottom
             .w3-card
                 img(src='/w3images/team2.jpg' alt='John' style='width:100%')
                 .w3-container
-                    h3 John Doe
+                    h3 EX1
                     p.w3-opacity CEO &amp; Founder
                     p
                         | Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
@@ -139,7 +142,7 @@ header#home.bgimg-1.w3-display-container.w3-grayscale-min
             .w3-card
                 img(src='/w3images/team1.jpg' alt='Jane' style='width:100%')
                 .w3-container
-                    h3 Anja Doe
+                    h3 EX2
                     p.w3-opacity Art Director
                     p
                         | Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
@@ -151,7 +154,7 @@ header#home.bgimg-1.w3-display-container.w3-grayscale-min
             .w3-card
                 img(src='/w3images/team3.jpg' alt='Mike' style='width:100%')
                 .w3-container
-                    h3 Mike Ross
+                    h3 EX3
                     p.w3-opacity Web Designer
                     p
                         | Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
@@ -163,7 +166,7 @@ header#home.bgimg-1.w3-display-container.w3-grayscale-min
             .w3-card
                 img(src='/w3images/team4.jpg' alt='Dan' style='width:100%')
                 .w3-container
-                    h3 Dan Star
+                    h3 EX4
                     p.w3-opacity Designer
                     p
                         | Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
@@ -356,20 +359,7 @@ footer.w3-center.w3-black.w3-padding-64
     p
         | Powered by
         a.w3-hover-text-green(href='https://www.w3schools.com/w3css/default.asp' title='W3.CSS' target='_blank') w3.css
-| &lt;!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In  --&gt;
-br
-| &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;50px&quot;
-br
-| height=&quot;162px&quot; viewBox=&quot;0 0 50 162&quot; style=&quot;enable-background:new 0 0 50 162;&quot; xml:space=&quot;preserve&quot;&gt;
-br
-| &lt;defs&gt;
-br
-| &lt;/defs&gt;
-br
-| &lt;path d=&quot;M25,162L25,162c-13.8,0-25-11.2-25-25L0,25C0,11.2,11.2,0,25,0h0c13.8,0,25,11.2,25,25v112C50,150.8,38.8,162,25,162z&quot;/&gt;
-br
-| &lt;/svg&gt;
-br
+| &lt;
 script.
     // Modal Image Gallery
     function onClick(element) {
