@@ -10,8 +10,12 @@ var logger = require('morgan');
 //SQL Connection
 var connection = require('./controllers/connection_module');
 
+
 connection.establish_connection();
 
+//Test Module
+var test_module = require('./controllers/test_module');
+test_module.init();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
