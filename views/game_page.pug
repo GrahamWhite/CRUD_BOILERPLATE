@@ -13,14 +13,23 @@ div
     input#height(type='text' placeholder='Height')
     br
     input#submit(type='button' value='Apply' )
+    br
+    input#colorPicker(type='color' value='#57FFC7')
+    br
+    label(for='generationSpeed') Generation Speed
+    input#generationSpeed(type='number' value='1')
+    br
+    label(for='population') Population
     p#population 0
+
 script.
 
         document.getElementById('submit').addEventListener('click', start);
         let population = document.getElementById('population');
 
-        let w = 100;
-        let h = 100;
+
+        let w = 1000;
+        let h = 500;
         let resolution = 10;
 
         let grid;
@@ -52,24 +61,17 @@ script.
 
         }
 
-
-
-
-
         function setup() {
             createCanvas(w, h);
             cols = w / resolution;
             rows = h / resolution;
             grid = make2DArray(cols, rows);
-
             for (let i = 0; i < cols; i++) {
                 for (let j = 0; j < rows; j++) {
                     grid[i][j] = floor(random(2));
 
                 }
             }
-
-
         }
 
         function make2DArray(cols, rows) {
@@ -80,19 +82,25 @@ script.
             return arr;
         }
 
-
         function draw() {
-            background(240);
+            background(245);
+
             for (let i = 0; i < cols; i++) {
                 for (let j = 0; j < rows; j++) {
                     let x = i * resolution;
                     let y = j * resolution;
 
+
+
+
                     if (grid[i][j] == 1) {
-                        fill(255);
+                        fill(document.getElementById('colorPicker').value);
                         stroke(0);
                         rect(x, y, resolution, resolution);
                     }
+
+
+
                 }
             }
 
@@ -115,19 +123,42 @@ script.
 
                     if (state == 0 && neighbors == 3) {
                         next[i][j] = 1;
+
                     } else if (state == 1 && (neighbors < 2 || neighbors > 3)) {
                         next[i][j] = 0;
                     } else {
                         next[i][j] = state;
                     }
 
-
                 }
             }
             grid = next;
             countPopulation();
 
+
+
         }
+
+        function countCellDensity(value, range) {
+
+            let sum = 0;
+            for (let i = -range; i < range; i++) {
+                for (let j = -range; j < range; j++) {
+
+                    let col = (value + i + cols) % cols;
+                    let row = (value + j + rows) % rows;
+
+                    sum += grid[col][row];
+
+
+                }
+            }
+
+            sum -= grid[value][value];
+            return sum;
+        }
+
+
 
         function countNeighbors(grid, x, y) {
             let sum = 0;
