@@ -8,8 +8,8 @@ head
     style(type='text/css').
         body{
             font-family: 'Roboto', sans-serif;
-            background-color: #111111;
-            color: azure;
+            background-color: #f2f2f2;
+
 
         }
 
@@ -27,10 +27,10 @@ div
     input#submit(type='button' value='Apply' )
     br
     p Color
-    input#colorPicker(type='color' value='#3C718B')
+    input#colorPicker(type='color' value='#FFBB00')
     br
     p Background Color
-    input#bgColorPicker(type='color' value='#636363')
+    input#bgColorPicker(type='color' value='#0F0F0F')
     br
 
     br
@@ -81,7 +81,7 @@ script.
         function setup() {
 
             createCanvas(w, h);
-            img = loadImage('images/code_abstract.jpg');
+            //img = loadImage('images/code_abstract.jpg');
 
             cols = w / resolution;
             rows = h / resolution;
@@ -105,8 +105,8 @@ script.
 
         function draw() {
             background(document.getElementById('bgColorPicker').value);
-            image(img, 0, 0);
-            tint(255, 50);
+            //image(img, 0, 0);
+            //tint(255, 50);
 
 
             for (let i = 0; i < cols; i++) {
