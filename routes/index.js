@@ -15,6 +15,7 @@ router.get( '/gameoflife', function (req, res){
   res.render('game_page', {title: 'Game of Life'});
 });
 
+
 router.post('/login', async (req, res) => {
   let username = req.body.username;
   let password = req.body.password;
@@ -30,9 +31,6 @@ router.post('/login', async (req, res) => {
     console.log('Password: ' + password);
 
     //SQL Connection
-
-
-
 
   }catch (err){
     errors.push({msg: err});
