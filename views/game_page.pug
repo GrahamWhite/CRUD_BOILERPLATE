@@ -16,10 +16,9 @@ div
     br
     input#colorPicker(type='color' value='#57FFC7')
     br
-    label(for='generationSpeed') Generation Speed
-    input#generationSpeed(type='number' value='1')
+
     br
-    label(for='population') Population
+    p Population
     p#population 0
 
 script.
@@ -31,7 +30,7 @@ script.
 
         let w = 1000;
         let h = 500;
-        let resolution = 10;
+        let resolution = 5;
 
         let grid;
         let cols;
@@ -62,7 +61,10 @@ script.
 
         }
 
+
+
         function setup() {
+
             createCanvas(w, h);
             cols = w / resolution;
             rows = h / resolution;
@@ -73,6 +75,8 @@ script.
 
                 }
             }
+
+
         }
 
         function make2DArray(cols, rows) {
@@ -83,45 +87,47 @@ script.
             return arr;
         }
 
+        let timer = 0;
+        let intervalMax = 100;
+        let stop = false;
+
+
+        function timeout(){
+            console.log('timing out')
+            setTimeout(timeout, 1000);
+        }
         function draw() {
+
+
+
             background(245);
 
             for (let i = 0; i < cols; i++) {
                 for (let j = 0; j < rows; j++) {
                     let x = i * resolution;
                     let y = j * resolution;
-
-
-
-
                     if (grid[i][j] == 1) {
                         fill(document.getElementById('colorPicker').value);
                         stroke(0);
                         rect(x, y, resolution, resolution);
                     }
-
-
-
                 }
             }
 
             let next = make2DArray(cols, rows);
 
             //compute next based on grid
-
             for (let i = 0; i < cols; i++) {
                 for (let j = 0; j < rows; j++) {
-
-
                     let state = grid[i][j];
+                    let neighbors = countNeighbors(grid, i, j);
 
+                    //Ignore edge values
                     if (i == 0 || i == cols - 1 || j == 0 || j == rows - 1) {
                         next[i][j] = state;
                     }
 
-                    let sum = 0;
-                    let neighbors = countNeighbors(grid, i, j);
-
+                    //Decision making
                     if (state == 0 && neighbors == 3) {
                         next[i][j] = 1;
 
@@ -130,7 +136,6 @@ script.
                     } else {
                         next[i][j] = state;
                     }
-
                 }
             }
             grid = next;
