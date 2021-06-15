@@ -8,7 +8,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/dev', function (req, res){
-  res.render('game_page', {title: 'Development Page'});
+  res.render('dev_page', {title: 'Development Page'});
+});
+
+router.get( '/gameoflife', function (req, res){
+  res.render('game_page', {title: 'Game of Life'});
 });
 
 router.post('/login', async (req, res) => {
