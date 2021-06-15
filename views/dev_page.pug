@@ -1,0 +1,57 @@
+doctype html
+head
+    meta(charset='utf-8')
+    title Development Page
+
+div
+    p Admin Login
+    label(for='usernameInput') Username
+    br
+    input#username(type='text' placeholder='Username' name='usernameInput')
+    br
+    br
+    label(for='passwordInput') Password
+    br
+    input#password(type='password' placeholder='Password' name='passwordInput')
+    br
+    br
+    input#loginButton(type='button' value='Login')
+
+script.
+    let button = document.getElementById('loginButton');
+    let usernameInput = document.getElementById('username');
+    let passwordInput = document.getElementById('password');
+
+    button.addEventListener("click", AttemptLogin);
+
+    function AttemptLogin(){
+        const data = {
+            username: usernameInput.value,
+            password: passwordInput.value
+        }
+
+        const options = {
+            headers: {
+                "content-type":"application/json"
+            },
+            body: JSON.stringify(data),
+            method: 'POST'
+        }
+
+        fetch('/login', options)
+        .then(data => {
+            return data.json();
+        }).then(res => console.log(res));
+
+
+
+
+    }
+
+
+
+
+
+
+
+

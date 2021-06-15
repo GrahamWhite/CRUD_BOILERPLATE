@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<title>Portfolio Website</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
+doctype html
+title Portfolio Website
+meta(charset='UTF-8')
+meta(name='viewport' content='width=device-width, initial-scale=1')
+link(rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css')
+link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway')
+link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+style.
     body,
     h1,
     h2,
@@ -16,7 +16,6 @@
         font-family: "Raleway", sans-serif;
         color: #FF2173;
     }
-
     body,
     html {
         height: 100%;
@@ -24,7 +23,6 @@
         /*background: #f5f5f5;*/
         color: black;
     }
-
     /* Full height image header */
     .bgimg-1 {
         background-position: center;
@@ -33,265 +31,336 @@
         min-height: 100%;
         /*color: #1A1A1A;*/
     }
-
     .w3-bar .w3-button {
         padding: 16px;
     }
-
     @media screen {
         .logo {
             margin-left: 7em;
             margin-top: 4em;
         }
     }
-</style>
-<link href="custom.css" rel="stylesheet" type="text/css"><!-- Navbar (sit on top)-->
-<div class="w3-top">
-    <div class="w3-bar w3-white w3-card" id="myNavbar"><a class="w3-bar-item w3-button w3-wide" href="#home">LOGO</a><!-- Right-sided navbar links-->
-        <div class="w3-right w3-hide-small"><a class="w3-bar-item w3-button" href="#about">ABOUT</a><a class="w3-bar-item w3-button" href="#team"><i class="fa fa-user"></i> TEAM</a><a class="w3-bar-item w3-button" href="#work"><i class="fa fa-th"></i> WORK</a><a class="w3-bar-item w3-button" href="#pricing"><i class="fa fa-usd"></i> PRICING</a><a class="w3-bar-item w3-button" href="#contact"><i class="fa fa-envelope"></i> CONTACT</a></div><!-- Hide right-floated links on small screens and replace them with a menu icon--><a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    </div>
-</div><!-- Sidebar on small screens when clicking the menu icon-->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" id="mySidebar" style="display:none"><a class="w3-bar-item w3-button w3-large w3-padding-16" href="javascript:void(0)" onclick="w3_close()">Close &times;</a><a class="w3-bar-item w3-button" href="#about" onclick="w3_close()">ABOUT</a><a class="w3-bar-item w3-button" href="#team" onclick="w3_close()">TEAM</a><a class="w3-bar-item w3-button" href="#work" onclick="w3_close()">WORK</a><a class="w3-bar-item w3-button" href="#pricing" onclick="w3_close()">PRICING</a><a class="w3-bar-item w3-button" href="#contact" onclick="w3_close()">CONTACT</a></nav><!-- Header with full-height image-->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-    <div class="w3-display-left" style="padding:48px">
-        <section>Full Stack Web Development for All of Your Business Needs</section><span class="w3-jumbo w3-hide-small">Graham White</span><br><span class="w3-xxlarge w3-hide-large w3-hide-medium">My Slogan</span><br><span class="w3-large">Full Stack Development</span>
-        <p><a class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" href="#about">Complete Web Solutions for all Your Business Needs</a></p>
-    </div>
-    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px"><i class="fa fa-facebook-official w3-hover-opacity"></i><i class="fa fa-instagram w3-hover-opacity"></i><i class="fa fa-snapchat w3-hover-opacity"></i><i class="fa fa-pinterest-p w3-hover-opacity"></i><i class="fa fa-twitter w3-hover-opacity"></i><i class="fa fa-linkedin w3-hover-opacity"></i></div>
-</header><!-- About Section-->
-<div class="w3-container" id="about" style="padding: 128px 16px; color: #00625A;">
-    <h3 class="w3-center">What I can Offer&nbsp;&nbsp;</h3>
-    <div class="w3-row-padding w3-center" style="margin-top:64px">
-        <div class="w3-quarter"><img class="fa w3-margin-bottom w3-jumbo w3-center" src="images/dev_icon.png" width="100">
-            <p class="w3-large">Web Development</p>
-            <p>Full frontend/backend design and development for web applications.</p>
-        </div>
-        <div class="w3-quarter"><img class="fa w3-margin-bottom w3-jumbo w3-center" src="images/rds_icon.png" width="70">
-            <p class="w3-large">Database Design</p>
-            <p>Relational database design, integration and maintenance.&nbsp;&nbsp;</p>
-        </div>
-        <div class="w3-quarter"><img class="fa w3-margin-bottom w3-jumbo w3-center" src="images/uiux_icon.png" width="90">
-            <p class="w3-large">UI/UX Design</p>
-            <p>User Interface and User expierence desgin.&nbsp; Investigating and implementing the requirements for a comprehensive UX expierience.</p>
-        </div>
-        <div class="w3-quarter"><img class="fa w3-margin-bottom w3-jumbo w3-center" src="images/net_icon.png" width="80">
-            <p class="w3-large">Network Management&nbsp;&nbsp;</p>
-            <p>Network design, setup, and maintenance.&nbsp; &nbsp;</p>
-        </div>
-    </div>
-</div><!-- Promo Section - "We know design"-->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-    <div class="w3-row-padding">
-        <div class="w3-col m6">
-            <h3>We know design.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
-            <p><a class="w3-button w3-black" href="#work"><i class="fa fa-th">&nbsp;</i> View Our Works</a></p>
-        </div>
-        <div class="w3-col m6"><img class="w3-image w3-round-large" src="images/under_construction.png" alt="abstract blue" width="700" height="394"></div>
-    </div>
-</div>
-<!--// Team Section-->
-<!--#team.w3-container(style='padding:128px 16px')-->
-<!--    h3.w3-center &nbsp;-->
-<!--    p.w3-center.w3-large My Portfolio-->
-<!--    .w3-row-padding.w3-grayscale(style='margin-top:64px')-->
-<!--        .w3-col.l3.m6.w3-margin-bottom-->
-<!--            .w3-card-->
-<!--                img(src='/w3images/team2.jpg' alt='John' style='width:100%')-->
-<!--                .w3-container-->
-<!--                    h3 EX1-->
-<!--                    p.w3-opacity CEO &amp; Founder-->
-<!--                    p-->
-<!--                        | Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.-->
-<!--                    p-->
-<!--                        button.w3-button.w3-light-grey.w3-block-->
-<!--                            i.fa.fa-envelope-->
-<!--                            |  Contact-->
-<!--        .w3-col.l3.m6.w3-margin-bottom-->
-<!--            .w3-card-->
-<!--                img(src='/w3images/team1.jpg' alt='Jane' style='width:100%')-->
-<!--                .w3-container-->
-<!--                    h3 EX2-->
-<!--                    p.w3-opacity Art Director-->
-<!--                    p-->
-<!--                        | Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.-->
-<!--                    p-->
-<!--                        button.w3-button.w3-light-grey.w3-block-->
-<!--                            i.fa.fa-envelope-->
-<!--                            |  Contact-->
-<!--        .w3-col.l3.m6.w3-margin-bottom-->
-<!--            .w3-card-->
-<!--                img(src='/w3images/team3.jpg' alt='Mike' style='width:100%')-->
-<!--                .w3-container-->
-<!--                    h3 EX3-->
-<!--                    p.w3-opacity Web Designer-->
-<!--                    p-->
-<!--                        | Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.-->
-<!--                    p-->
-<!--                        button.w3-button.w3-light-grey.w3-block-->
-<!--                            i.fa.fa-envelope-->
-<!--                            |  Contact-->
-<!--        .w3-col.l3.m6.w3-margin-bottom-->
-<!--            .w3-card-->
-<!--                img(src='/w3images/team4.jpg' alt='Dan' style='width:100%')-->
-<!--                .w3-container-->
-<!--                    h3 EX4-->
-<!--                    p.w3-opacity Designer-->
-<!--                    p-->
-<!--                        | Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.-->
-<!--                    p-->
-<!--                        button.w3-button.w3-light-grey.w3-block-->
-<!--                            i.fa.fa-envelope-->
-<!--                            |  Contact-->
-<!--// Promo Section "Statistics"-->
-<!--.w3-container.w3-row.w3-center.w3-dark-grey.w3-padding-64-->
-<!--    .w3-quarter-->
-<!--        span.w3-xxlarge 14+-->
-<!--        br-->
-<!--        | Partners-->
-<!--    .w3-quarter-->
-<!--        span.w3-xxlarge 55+-->
-<!--        br-->
-<!--        | Projects Done-->
-<!--    .w3-quarter-->
-<!--        span.w3-xxlarge 89+-->
-<!--        br-->
-<!--        | Happy Clients-->
-<!--    .w3-quarter-->
-<!--        span.w3-xxlarge 150+-->
-<!--        br-->
-<!--        | Meetings-->
-<!-- Work Section-->
-<div class="w3-container" id="work" style="padding:128px 16px">
-    <h3 class="w3-center">OUR WORK</h3>
-    <p class="w3-center w3-large">What we&apos;ve done for people</p>
-    <div class="w3-row-padding" style="margin-top:64px">
-        <div class="w3-col l3 m6"><img class="w3-hover-opacity" src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" alt="A microphone"></div>
-        <div class="w3-col l3 m6"><img class="w3-hover-opacity" src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" alt="A phone"></div>
-        <div class="w3-col l3 m6"><img class="w3-hover-opacity" src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" alt="A drone"></div>
-        <div class="w3-col l3 m6"><img class="w3-hover-opacity" src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" alt="Soundbox"></div>
-    </div>
-    <div class="w3-row-padding w3-section">
-        <div class="w3-col l3 m6"><img class="w3-hover-opacity" src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" alt="A tablet"></div>
-        <div class="w3-col l3 m6"><img class="w3-hover-opacity" src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" alt="A camera"></div>
-        <div class="w3-col l3 m6"><img class="w3-hover-opacity" src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" alt="A typewriter"></div>
-        <div class="w3-col l3 m6"><img class="w3-hover-opacity" src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" alt="A tableturner"></div>
-    </div>
-</div><!-- Modal for full size images on click-->
-<div class="w3-modal w3-black" id="modal01" onclick="this.style.display='none'"><span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"><img class="w3-image" id="img01">
-        <p class="w3-opacity w3-large" id="caption"></p>
-    </div>
-</div><!-- Skills Section-->
-<div class="w3-container w3-light-grey w3-padding-64">
-    <div class="w3-row-padding">
-        <div class="w3-col m6">
-            <h3>Technical Know.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore.</p>
-        </div>
-        <div class="w3-col m6">
-            <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
-            </div>
-            <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
-            </div>
-            <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--// Pricing Section-->
-<!--#pricing.w3-container.w3-center.w3-dark-grey(style='padding:128px 16px')-->
-<!--    h3 PRICING-->
-<!--    p.w3-large Choose a pricing plan that fits your needs.-->
-<!--    .w3-row-padding(style='margin-top:64px')-->
-<!--        .w3-third.w3-section-->
-<!--            ul.w3-ul.w3-white.w3-hover-shadow-->
-<!--                li.w3-black.w3-xlarge.w3-padding-32 Basic-->
-<!--                li.w3-padding-16-->
-<!--                    b 10GB-->
-<!--                    |  Storage-->
-<!--                li.w3-padding-16-->
-<!--                    b 10-->
-<!--                    |  Emails-->
-<!--                li.w3-padding-16-->
-<!--                    b 10-->
-<!--                    |  Domains-->
-<!--                li.w3-padding-16-->
-<!--                    b Endless-->
-<!--                    |  Support-->
-<!--                li.w3-padding-16-->
-<!--                    h2.w3-wide $ 10-->
-<!--                    span.w3-opacity per month-->
-<!--                li.w3-light-grey.w3-padding-24-->
-<!--                    button.w3-button.w3-black.w3-padding-large Sign Up-->
-<!--        .w3-third-->
-<!--            ul.w3-ul.w3-white.w3-hover-shadow-->
-<!--                li.w3-red.w3-xlarge.w3-padding-48 Pro-->
-<!--                li.w3-padding-16-->
-<!--                    b 25GB-->
-<!--                    |  Storage-->
-<!--                li.w3-padding-16-->
-<!--                    b 25-->
-<!--                    |  Emails-->
-<!--                li.w3-padding-16-->
-<!--                    b 25-->
-<!--                    |  Domains-->
-<!--                li.w3-padding-16-->
-<!--                    b Endless-->
-<!--                    |  Support-->
-<!--                li.w3-padding-16-->
-<!--                    h2.w3-wide $ 25-->
-<!--                    span.w3-opacity per month-->
-<!--                li.w3-light-grey.w3-padding-24-->
-<!--                    button.w3-button.w3-black.w3-padding-large Sign Up-->
-<!--        .w3-third.w3-section-->
-<!--            ul.w3-ul.w3-white.w3-hover-shadow-->
-<!--                li.w3-black.w3-xlarge.w3-padding-32 Premium-->
-<!--                li.w3-padding-16-->
-<!--                    b 50GB-->
-<!--                    |  Storage-->
-<!--                li.w3-padding-16-->
-<!--                    b 50-->
-<!--                    |  Emails-->
-<!--                li.w3-padding-16-->
-<!--                    b 50-->
-<!--                    |  Domains-->
-<!--                li.w3-padding-16-->
-<!--                    b Endless-->
-<!--                    |  Support-->
-<!--                li.w3-padding-16-->
-<!--                    h2.w3-wide $ 50-->
-<!--                    span.w3-opacity per month-->
-<!--                li.w3-light-grey.w3-padding-24-->
-<!--                    button.w3-button.w3-black.w3-padding-large Sign Up-->
-<!-- Contact Section-->
-<div class="w3-container w3-light-grey" id="contact" style="padding:128px 16px">
-    <h3 class="w3-center">CONTACT</h3>
-    <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-    <div style="margin-top:48px">
-        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: mail@mail.com</p><br>
-        <form action="/action_page.php" target="_blank">
-            <p><input class="w3-input w3-border" type="text" placeholder="Name" required="" name="Name"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Email" required="" name="Email"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Subject" required="" name="Subject"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Message" required="" name="Message"></p>
-            <p><button class="w3-button w3-black" type="submit"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button></p>
-        </form><!-- Image of location/map--><img class="w3-image w3-greyscale" src="/w3images/map.jpg" style="width:100%;margin-top:48px">
-    </div>
-</div><!-- Footer-->
-<footer class="w3-center w3-black w3-padding-64"><a class="w3-button w3-light-grey" href="#home"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-xlarge w3-section"><i class="fa fa-facebook-official w3-hover-opacity"></i><i class="fa fa-instagram w3-hover-opacity"></i><i class="fa fa-snapchat w3-hover-opacity"></i><i class="fa fa-pinterest-p w3-hover-opacity"></i><i class="fa fa-twitter w3-hover-opacity"></i><i class="fa fa-linkedin w3-hover-opacity"></i></div>
-</footer>
-<script>
+link(href='custom.css' rel='stylesheet' type='text/css')
+// Navbar (sit on top)
+.w3-top
+    #myNavbar.w3-bar.w3-white.w3-card
+        a.w3-bar-item.w3-button.w3-wide(href='#home') LOGO
+        // Right-sided navbar links
+        .w3-right.w3-hide-small
+            a.w3-bar-item.w3-button(href='#about') ABOUT
+            a.w3-bar-item.w3-button(href='#team')
+                i.fa.fa-user
+                |  TEAM
+            a.w3-bar-item.w3-button(href='#work')
+                i.fa.fa-th
+                |  WORK
+            a.w3-bar-item.w3-button(href='#pricing')
+                i.fa.fa-usd
+                |  PRICING
+            a.w3-bar-item.w3-button(href='#contact')
+                i.fa.fa-envelope
+                |  CONTACT
+        // Hide right-floated links on small screens and replace them with a menu icon
+        a.w3-bar-item.w3-button.w3-right.w3-hide-large.w3-hide-medium(href='javascript:void(0)' onclick='w3_open()')
+            i.fa.fa-bars
+// Sidebar on small screens when clicking the menu icon
+nav#mySidebar.w3-sidebar.w3-bar-block.w3-black.w3-card.w3-animate-left.w3-hide-medium.w3-hide-large(style='display:none')
+    a.w3-bar-item.w3-button.w3-large.w3-padding-16(href='javascript:void(0)' onclick='w3_close()') Close &times;
+    a.w3-bar-item.w3-button(href='#about' onclick='w3_close()') ABOUT
+    a.w3-bar-item.w3-button(href='#team' onclick='w3_close()') TEAM
+    a.w3-bar-item.w3-button(href='#work' onclick='w3_close()') WORK
+    a.w3-bar-item.w3-button(href='#pricing' onclick='w3_close()') PRICING
+    a.w3-bar-item.w3-button(href='#contact' onclick='w3_close()') CONTACT
+// Header with full-height image
+header#home.bgimg-1.w3-display-container.w3-grayscale-min
+    .w3-display-left(style='padding:48px')
+        section Full Stack Web Development for All of Your Business Needs
+        span.w3-jumbo.w3-hide-small Graham White
+        br
+        span.w3-xxlarge.w3-hide-large.w3-hide-medium My Slogan
+        br
+        span.w3-large Full Stack Development
+        p
+            a.w3-button.w3-white.w3-padding-large.w3-large.w3-margin-top.w3-opacity.w3-hover-opacity-off(href='#about') Complete Web Solutions for all Your Business Needs
+    .w3-display-bottomleft.w3-text-grey.w3-large(style='padding:24px 48px')
+        i.fa.fa-facebook-official.w3-hover-opacity
+        i.fa.fa-instagram.w3-hover-opacity
+        i.fa.fa-snapchat.w3-hover-opacity
+        i.fa.fa-pinterest-p.w3-hover-opacity
+        i.fa.fa-twitter.w3-hover-opacity
+        i.fa.fa-linkedin.w3-hover-opacity
+// About Section
+#about.w3-container(style='padding: 128px 16px; color: #00625A;')
+    h3.w3-center What I can Offer&nbsp;&nbsp;
+    .w3-row-padding.w3-center(style='margin-top:64px')
+        .w3-quarter
+            img.fa.w3-margin-bottom.w3-jumbo.w3-center(src='images/dev_icon.png' width='100')
+            p.w3-large Web Development
+            p Full frontend/backend design and development for web applications.
+        .w3-quarter
+            img.fa.w3-margin-bottom.w3-jumbo.w3-center(src='images/rds_icon.png' width='70')
+            p.w3-large Database Design
+            p Relational database design, integration and maintenance.&nbsp;&nbsp;
+        .w3-quarter
+            img.fa.w3-margin-bottom.w3-jumbo.w3-center(src='images/uiux_icon.png' width='90')
+            p.w3-large UI/UX Design
+            p
+                | User Interface and User expierence desgin.&nbsp; Investigating and implementing the requirements for a comprehensive UX expierience.
+        .w3-quarter
+            img.fa.w3-margin-bottom.w3-jumbo.w3-center(src='images/net_icon.png' width='80')
+            p.w3-large Network Management&nbsp;&nbsp;
+            p Network design, setup, and maintenance.&nbsp; &nbsp;
+// Promo Section - "We know design"
+.w3-container.w3-light-grey(style='padding:128px 16px')
+    .w3-row-padding
+        .w3-col.m6
+            h3 We know design.
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                br
+                | tempor incididunt ut labore et dolore.
+            p
+                a.w3-button.w3-black(href='#work')
+                    i.fa.fa-th &nbsp;
+                    |  View Our Works
+        .w3-col.m6
+            img.w3-image.w3-round-large(src='images/under_construction.png' alt='abstract blue' width='700' height='394')
+// // Team Section
+// #team.w3-container(style='padding:128px 16px')
+// h3.w3-center &nbsp;
+// p.w3-center.w3-large My Portfolio
+// .w3-row-padding.w3-grayscale(style='margin-top:64px')
+// .w3-col.l3.m6.w3-margin-bottom
+// .w3-card
+// img(src='/w3images/team2.jpg' alt='John' style='width:100%')
+// .w3-container
+// h3 EX1
+// p.w3-opacity CEO &amp; Founder
+// p
+// | Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+// p
+// button.w3-button.w3-light-grey.w3-block
+// i.fa.fa-envelope
+// |  Contact
+// .w3-col.l3.m6.w3-margin-bottom
+// .w3-card
+// img(src='/w3images/team1.jpg' alt='Jane' style='width:100%')
+// .w3-container
+// h3 EX2
+// p.w3-opacity Art Director
+// p
+// | Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+// p
+// button.w3-button.w3-light-grey.w3-block
+// i.fa.fa-envelope
+// |  Contact
+// .w3-col.l3.m6.w3-margin-bottom
+// .w3-card
+// img(src='/w3images/team3.jpg' alt='Mike' style='width:100%')
+// .w3-container
+// h3 EX3
+// p.w3-opacity Web Designer
+// p
+// | Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+// p
+// button.w3-button.w3-light-grey.w3-block
+// i.fa.fa-envelope
+// |  Contact
+// .w3-col.l3.m6.w3-margin-bottom
+// .w3-card
+// img(src='/w3images/team4.jpg' alt='Dan' style='width:100%')
+// .w3-container
+// h3 EX4
+// p.w3-opacity Designer
+// p
+// | Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+// p
+// button.w3-button.w3-light-grey.w3-block
+// i.fa.fa-envelope
+// |  Contact
+// // Promo Section "Statistics"
+// .w3-container.w3-row.w3-center.w3-dark-grey.w3-padding-64
+// .w3-quarter
+// span.w3-xxlarge 14+
+// br
+// | Partners
+// .w3-quarter
+// span.w3-xxlarge 55+
+// br
+// | Projects Done
+// .w3-quarter
+// span.w3-xxlarge 89+
+// br
+// | Happy Clients
+// .w3-quarter
+// span.w3-xxlarge 150+
+// br
+// | Meetings
+// Work Section
+#work.w3-container(style='padding:128px 16px')
+    h3.w3-center OUR WORK
+    p.w3-center.w3-large What we&apos;ve done for people
+    .w3-row-padding(style='margin-top:64px')
+        .w3-col.l3.m6
+            img.w3-hover-opacity(src='/w3images/tech_mic.jpg' style='width:100%' onclick='onClick(this)' alt='A microphone')
+        .w3-col.l3.m6
+            img.w3-hover-opacity(src='/w3images/tech_phone.jpg' style='width:100%' onclick='onClick(this)' alt='A phone')
+        .w3-col.l3.m6
+            img.w3-hover-opacity(src='/w3images/tech_drone.jpg' style='width:100%' onclick='onClick(this)' alt='A drone')
+        .w3-col.l3.m6
+            img.w3-hover-opacity(src='/w3images/tech_sound.jpg' style='width:100%' onclick='onClick(this)' alt='Soundbox')
+    .w3-row-padding.w3-section
+        .w3-col.l3.m6
+            img.w3-hover-opacity(src='/w3images/tech_tablet.jpg' style='width:100%' onclick='onClick(this)' alt='A tablet')
+        .w3-col.l3.m6
+            img.w3-hover-opacity(src='/w3images/tech_camera.jpg' style='width:100%' onclick='onClick(this)' alt='A camera')
+        .w3-col.l3.m6
+            img.w3-hover-opacity(src='/w3images/tech_typewriter.jpg' style='width:100%' onclick='onClick(this)' alt='A typewriter')
+        .w3-col.l3.m6
+            img.w3-hover-opacity(src='/w3images/tech_tableturner.jpg' style='width:100%' onclick='onClick(this)' alt='A tableturner')
+// Modal for full size images on click
+#modal01.w3-modal.w3-black(onclick="this.style.display='none'")
+    span.w3-button.w3-xxlarge.w3-black.w3-padding-large.w3-display-topright(title='Close Modal Image') &times;
+    .w3-modal-content.w3-animate-zoom.w3-center.w3-transparent.w3-padding-64
+        img#img01.w3-image
+        p#caption.w3-opacity.w3-large
+// Skills Section
+.w3-container.w3-light-grey.w3-padding-64
+    .w3-row-padding
+        .w3-col.m6
+            h3 Technical Know.
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                br
+                |  tempor incididunt ut labore et dolore.
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                br
+                |  tempor incididunt ut labore et dolore.
+        .w3-col.m6
+            p.w3-wide
+                i.fa.fa-camera.w3-margin-right
+                | Photography
+            .w3-grey
+                .w3-container.w3-dark-grey.w3-center(style='width:90%') 90%
+            p.w3-wide
+                i.fa.fa-desktop.w3-margin-right
+                | Web Design
+            .w3-grey
+                .w3-container.w3-dark-grey.w3-center(style='width:85%') 85%
+            p.w3-wide
+                i.fa.fa-photo.w3-margin-right
+                | Photoshop
+            .w3-grey
+                .w3-container.w3-dark-grey.w3-center(style='width:75%') 75%
+// // Pricing Section
+// #pricing.w3-container.w3-center.w3-dark-grey(style='padding:128px 16px')
+// h3 PRICING
+// p.w3-large Choose a pricing plan that fits your needs.
+// .w3-row-padding(style='margin-top:64px')
+// .w3-third.w3-section
+// ul.w3-ul.w3-white.w3-hover-shadow
+// li.w3-black.w3-xlarge.w3-padding-32 Basic
+// li.w3-padding-16
+// b 10GB
+// |  Storage
+// li.w3-padding-16
+// b 10
+// |  Emails
+// li.w3-padding-16
+// b 10
+// |  Domains
+// li.w3-padding-16
+// b Endless
+// |  Support
+// li.w3-padding-16
+// h2.w3-wide $ 10
+// span.w3-opacity per month
+// li.w3-light-grey.w3-padding-24
+// button.w3-button.w3-black.w3-padding-large Sign Up
+// .w3-third
+// ul.w3-ul.w3-white.w3-hover-shadow
+// li.w3-red.w3-xlarge.w3-padding-48 Pro
+// li.w3-padding-16
+// b 25GB
+// |  Storage
+// li.w3-padding-16
+// b 25
+// |  Emails
+// li.w3-padding-16
+// b 25
+// |  Domains
+// li.w3-padding-16
+// b Endless
+// |  Support
+// li.w3-padding-16
+// h2.w3-wide $ 25
+// span.w3-opacity per month
+// li.w3-light-grey.w3-padding-24
+// button.w3-button.w3-black.w3-padding-large Sign Up
+// .w3-third.w3-section
+// ul.w3-ul.w3-white.w3-hover-shadow
+// li.w3-black.w3-xlarge.w3-padding-32 Premium
+// li.w3-padding-16
+// b 50GB
+// |  Storage
+// li.w3-padding-16
+// b 50
+// |  Emails
+// li.w3-padding-16
+// b 50
+// |  Domains
+// li.w3-padding-16
+// b Endless
+// |  Support
+// li.w3-padding-16
+// h2.w3-wide $ 50
+// span.w3-opacity per month
+// li.w3-light-grey.w3-padding-24
+// button.w3-button.w3-black.w3-padding-large Sign Up
+// Contact Section
+#contact.w3-container.w3-light-grey(style='padding:128px 16px')
+    h3.w3-center CONTACT
+    p.w3-center.w3-large Lets get in touch. Send us a message:
+    div(style='margin-top:48px')
+        p
+            i.fa.fa-map-marker.fa-fw.w3-xxlarge.w3-margin-right
+            |  Chicago, US
+        p
+            i.fa.fa-phone.fa-fw.w3-xxlarge.w3-margin-right
+            |  Phone: +00 151515
+        p
+            i.fa.fa-envelope.fa-fw.w3-xxlarge.w3-margin-right
+            |  Email: mail@mail.com
+        br
+        form(action='/action_page.php' target='_blank')
+            p
+                input.w3-input.w3-border(type='text' placeholder='Name' required='' name='Name')
+            p
+                input.w3-input.w3-border(type='text' placeholder='Email' required='' name='Email')
+            p
+                input.w3-input.w3-border(type='text' placeholder='Subject' required='' name='Subject')
+            p
+                input.w3-input.w3-border(type='text' placeholder='Message' required='' name='Message')
+            p
+                button.w3-button.w3-black(type='submit')
+                    i.fa.fa-paper-plane
+                    |  SEND MESSAGE
+        // Image of location/map
+        img.w3-image.w3-greyscale(src='/w3images/map.jpg' style='width:100%;margin-top:48px')
+// Footer
+footer.w3-center.w3-black.w3-padding-64
+    a.w3-button.w3-light-grey(href='#home')
+        i.fa.fa-arrow-up.w3-margin-right
+        | To the top
+    .w3-xlarge.w3-section
+        i.fa.fa-facebook-official.w3-hover-opacity
+        i.fa.fa-instagram.w3-hover-opacity
+        i.fa.fa-snapchat.w3-hover-opacity
+        i.fa.fa-pinterest-p.w3-hover-opacity
+        i.fa.fa-twitter.w3-hover-opacity
+        i.fa.fa-linkedin.w3-hover-opacity
+script.
     // Modal Image Gallery
     function onClick(element) {
         document.getElementById("img01").src = element.src;
@@ -301,7 +370,6 @@
     }
     // Toggle between showing and hiding the sidebar when clicking the menu icon
     var mySidebar = document.getElementById("mySidebar");
-
     function w3_open() {
         if (mySidebar.style.display === 'block') {
             mySidebar.style.display = 'none';
@@ -313,4 +381,3 @@
     function w3_close() {
         mySidebar.style.display = "none";
     }
-</script>
