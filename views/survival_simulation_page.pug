@@ -1,0 +1,188 @@
+doctype html
+script(src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js')
+head
+    meta(charset='utf-8')
+    title Development Page
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet")
+    style(type='text/css').
+        body{
+            font-family: 'Roboto', sans-serif;
+            background-color: #f2f2f2;
+
+
+        }
+
+div
+
+    h3 Hunter
+    p This is a simulation that depicts natural selection
+
+    input#resolution(type='text' placeholder='Resolution')
+    br
+    input#width(type='text' placeholder='Width')
+    br
+    input#height(type='text' placeholder='Height')
+    br
+    input#submit(type='button' value='Apply' )
+    input#stepButton(type='button' value='Step Animation' )
+    br
+    p Color
+    input#colorPicker(type='color' value='#FFBB00')
+    br
+    p Background Color
+    input#bgColorPicker(type='color' value='#0F0F0F')
+    br
+
+    br
+    p Population
+    p#population 0
+
+script.
+
+    document.getElementById('submit').addEventListener('click', start);
+    document.getElementById('stepButton').addEventListener('click', Animate);
+
+    let population = document.getElementById('population');
+
+
+    let w = 200 ;
+    let h = 200;
+    let resolution = 10;
+
+    let numCreatures = 10;
+
+    let grid;
+    let cols;
+    let rows;
+
+    function start(){
+        try {
+            w = document.getElementById('width').value;
+            h = document.getElementById('height').value;
+            resolution = document.getElementById('resolution').value;
+
+            setup();
+        }catch (err) {
+            console.log('Invalid inputs');
+
+        }
+
+    }
+
+    const creatureModel = {
+        type: 'default',
+        speed: 1,
+        food: 0,
+        color: '#555555'
+    }
+
+    function setup() {
+
+        createCanvas(w, h);
+
+        cols = w / resolution;
+        rows = h / resolution;
+        grid = make2DArray(cols, rows);
+        for (let i = 0; i < cols; i++) {
+            for (let j = 0; j < rows; j++) {
+                //Assign random values to each cell
+                grid[i][j] = Object.create(creatureModel);
+
+                let max = 10;
+                let foodMax = 10;
+
+                if(Math.floor(Math.random() * max) === 5){
+                    grid[i][j].color = '#4287f5';
+                    grid[i][j].type = 'creature';
+                    grid[i][j].food = 10;
+
+                }
+
+                if (Math.floor(Math.random() * foodMax) === 5) {
+                    grid[i][j].color = '#54F542';
+                    grid[i][j].type = 'food';
+
+                }
+            }
+        }
+    }
+
+    function make2DArray(cols, rows) {
+        let arr = new Array(cols);
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = new Array(rows);
+        }
+        return arr;
+    }
+
+
+    function Animate(){
+        console.log('Stepping the animation');
+
+        for (let i = 0; i < cols; i++) {
+            for (let j = 0; j < rows; j++) {
+                //check if there is food in the neighboring squares
+
+
+
+
+            }
+        }
+    }
+
+
+
+
+
+    function draw() {
+        background(document.getElementById('bgColorPicker').value);
+
+        for (let i = 0; i < cols; i++) {
+            for (let j = 0; j < rows; j++) {
+                let x = i * resolution;
+                let y = j * resolution;
+
+                fill(grid[i][j].color);
+                rect(x, y, resolution, resolution);
+                stroke(0);
+            }
+        }
+
+
+
+
+    }
+
+
+
+
+    //
+    // function SearchForFood(grid, x, y) {
+    //     for (let i = -1; i < 2; i++) {
+    //         for (let j = -1; j < 2; j++) {
+    //
+    //             let col = (x + i + cols) % cols ;
+    //             let row = (y + j + rows) % rows;
+    //
+    //             if(grid[i][j] != null){
+    //                 if (grid[i][j].type === 'food') {
+    //                     return {
+    //                         y: col,
+    //                         x: row
+    //                     };
+    //                 }
+    //             }
+    //
+    //
+    //
+    //
+    //         }
+    //     }
+    //
+    //     return null;
+    // }
+
+
+
+
