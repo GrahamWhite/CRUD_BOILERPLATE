@@ -956,14 +956,31 @@ script.
             this.w = this.round5(displayWidth);
             this.h = this.round5(displayHeight);
             this.resolution = 5;
+
+            //if mobile reduce resolution
+            if (/Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+                this.w = this.roundEven(displayWidth);
+                this.h = this.roundEven(displayHeight);
+                this.resolution = 2;
+            }
+
             this.grid;
             this.cols;
             this.rows;
         }
 
+        isMobile(){
+            return false;
+        }
+
 
         round5(x) {
             return (x % 5) >= 2.5 ? parseInt(x / 5) * 5 + 5 : parseInt(x / 5) * 5;
+        }
+
+        roundEven(x) {
+            return (x % 2) >= 0.5 ? parseInt(x / 2) * 2 + 2 : parseInt(x / 2) * 2;
         }
         setup() {
             let canvas = createCanvas(this.w, this.h);
