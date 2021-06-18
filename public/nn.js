@@ -2,6 +2,10 @@
 
 class nn {
 
+    sigmoid(x) {
+        return 1 / (1 + Math.exp(-x));
+    }
+
     constructor(input_nodes, hidden_nodes, output_nodes) {
         this.inputNodes = input_nodes;
         this.hiddenNodes = hidden_nodes;
@@ -14,33 +18,47 @@ class nn {
 
         this.bias_h = new Matrix(this.hiddenNodes, 1);
         this.bias_o = new Matrix(this.outputNodes, 1);
+
         this.bias_h.randomize();
         this.bias_o.randomize();
 
-        this.weights_ih.print();
-        this.weights_ho.print();
-
-
     }
 
-    sigmoid(x) {
-        return 1 / (1 + Math.exp(-x));
+    train(inputs, targets){
+        let outputs = this.feedForward(inputs);
+
+        //convert array to matrix array
+        outputs = Matrix.fromArray(outputs);
+        targets = Matrix.fromArray(targets);
+
+        let error = Matrix.subtract(targets, outputs);
+        targets.print();
+        outputs.print();
+        error.print();
+
+
     }
 
     feedForward(input_array) {
 
+
+        // Generating the Hidden Outputs
         let inputs = Matrix.fromArray(input_array);
-
         let hidden = Matrix.multiply(this.weights_ih, inputs);
-
-        //activation function
         hidden.add(this.bias_h);
+        // activation function!
         hidden.map(this.sigmoid);
+
+        // Generating the output's output!
         let output = Matrix.multiply(this.weights_ho, hidden);
         output.add(this.bias_o);
         output.map(this.sigmoid);
 
-
+        // Sending back to the caller!
         return output.toArray();
+
+
     }
+
+
 }

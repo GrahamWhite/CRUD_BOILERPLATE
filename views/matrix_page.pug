@@ -13,13 +13,16 @@ head
 
         }
     script(src='matrix.js')
-    script(src='neural_network4.js')
+    script(src='nn.js')
 div
     h1 Matrix
 
     script.
-           let network = new nn(2,2,1);
-           let input = [1,0];
+           let net = new nn(2,2,2);
 
-           let output = network.feedForward(input);
-           console.log(output);
+           let inputs = [1,0];
+           let targets = [1,0];
+
+           net.train(inputs,targets);
+
+
