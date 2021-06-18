@@ -957,12 +957,11 @@ script.
             this.h = this.round5(displayHeight);
             this.resolution = 5;
 
-            //if mobile reduce resolution
             if (/Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 
-                this.w = this.roundEven(displayWidth);
-                this.h = this.roundEven(displayHeight);
-                this.resolution = 2;
+                // this.w = this.roundEven(displayWidth);
+                // this.h = this.roundEven(displayHeight);
+                // this.resolution = 2;
             }
 
             this.grid;
