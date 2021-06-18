@@ -15,6 +15,10 @@ router.get( '/gameoflife', function (req, res){
   res.render('game_of_life_page', {title: 'Game of Life'});
 });
 
+router.get( '/matrix', function (req, res){
+  res.render('matrix_page', {title: 'Game of Life'});
+});
+
 router.get( '/neuralnetwork', function (req, res){
   res.render('neural_network_page', {title: 'Game of Life'});
 });
