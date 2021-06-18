@@ -12,23 +12,14 @@ head
 
 
         }
-
+    script(src='matrix.js')
+    script(src='neural_network4.js')
 div
     h1 Matrix
-    script(src='matrix.js')
+
     script.
-        function init(){
-            let m1 = new Matrix(2,2);
-            m1.randomize();
-            console.table(m1.matrix);
-            let b = m1.transpose();
-            console.table(b.matrix)
+           let network = new nn(2,2,1);
+           let input = [1,0];
 
-        }
-        init();
-
-
-
-
-        //console.table(m1.matrix);
-
+           let output = network.feedForward(input);
+           console.log(output);
