@@ -31,11 +31,16 @@ class nn {
         outputs = Matrix.fromArray(outputs);
         targets = Matrix.fromArray(targets);
 
-        let error = Matrix.subtract(targets, outputs);
+        let output_errors = Matrix.subtract(targets, outputs);
+
+        let who_t = Matrix.transpose(this.weights_ho);
+        let hidden_errors = Matrix.multiply(who_t, output_errors);
+
+
+
         targets.print();
         outputs.print();
-        error.print();
-
+        output_errors.print();
 
     }
 

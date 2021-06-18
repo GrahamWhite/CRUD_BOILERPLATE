@@ -12,18 +12,24 @@ head
 
 
         }
-
-    script(src='nn.js')
     script(src='matrix.js')
+    script(src='nn.js')
+
 div
     h1 Matrix
 
     script.
+
            let net = new nn(2,2,2);
 
            let inputs = [1,0];
            let targets = [1,0];
 
+
            net.train(inputs,targets);
+
+
+
+
 
 

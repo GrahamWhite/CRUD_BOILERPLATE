@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('landing_page', { title: 'Landing Page' });
+  res.render('new_landing_page', { title: 'Landing Page' });
 });
 
 router.get('/dev', function (req, res){
