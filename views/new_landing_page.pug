@@ -51,6 +51,10 @@ head
     link(href='./landing_page_files/skin-white.css' rel='stylesheet')
 
 
+    //Dev fonts
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+
+
 
     script(type='text/javascript' charset='UTF-8' src='./landing_page_files/common.js.download')
     script(type='text/javascript' charset='UTF-8' src='./landing_page_files/util.js.download')
@@ -82,49 +86,31 @@ head
         .menu-area
             .toogle-bars
                 a.collapsed(href='https://yobithemes.com/demo/html/whoiam/black/#menu-collapse' data-toggle='collapse')
-                    i.fa.fa-bars.ic-open
-                    i.fa.fa-remove.ic-close
-                    |  MENU
+                    i.material-icons.md-48 menu
             #menu-collapse.menu-collapse.collapse
                 .container
                     .row
                         .col-md-3
                             ul.breadcrumb.main-nav.no-space
                                 li.link-inpage
-                                    a#hireme-tab.link-inpage(href='https://yobithemes.com/demo/html/whoiam/black/#contact')
-                                        i.fa.fa-briefcase
+                                    a#hireme-tab.link-inpage(href='#')
+                                        i.material-icons.md-24 card_travel
                                         |  Hire Me Now
                         .col-md-6
                             ul.breadcrumb.main-nav.nav
                                 li.active
-                                    a.link-inpage(href='https://yobithemes.com/demo/html/whoiam/black/#home') Home
+                                    a.link-inpage(href='#') Home
                                 li
-                                    a.link-inpage(href='https://yobithemes.com/demo/html/whoiam/black/#about') About
+                                    a.link-inpage(href='#') About
                                 li
-                                    a.link-inpage(href='https://yobithemes.com/demo/html/whoiam/black/#resume') Resume
+                                    a.link-inpage(href='#') Resume
                                 li
-                                    a.link-inpage(href='https://yobithemes.com/demo/html/whoiam/black/#portfolio') Portfolio
+                                    a.link-inpage(href='#') Portfolio
                                 li
-                                    a.link-inpage(href='https://yobithemes.com/demo/html/whoiam/black/#blog') Blog
+                                    a.link-inpage(href='#') Blog
                                 li
-                                    a#contact-tab.link-inpage(href='https://yobithemes.com/demo/html/whoiam/black/#contact') Contact
-                        .col-md-3
-                            ul.breadcrumb.main-nav.no-space
-                                li
-                                    a(href='https://yobithemes.com/demo/html/whoiam/black/#')
-                                        i.fa.fa-facebook
-                                li
-                                    a(href='https://yobithemes.com/demo/html/whoiam/black/#')
-                                        i.fa.fa-google
-                                li
-                                    a(href='https://yobithemes.com/demo/html/whoiam/black/#')
-                                        i.fa.fa-twitter
-                                li
-                                    a(href='https://yobithemes.com/demo/html/whoiam/black/#')
-                                        i.fa.fa-linkedin
-                                li
-                                    a(href='https://yobithemes.com/demo/html/whoiam/black/#')
-                                        i.fa.fa-github
+                                    a#contact-tab.link-inpage(href='#') Contact
+
         // End Main navbar
     // End Main Header
     // ABOUT ME
@@ -133,6 +119,7 @@ head
             .my-pict
                 .overfly
                     .text-botttom
+                        img(src="./images/me.jpg" style="width: 200%")
                         h2.text-uppercase.color-dark.text-bold Graham White
                         h5.text-uppercase.color-dark.font-alt Live On Earth
             .my-desc
@@ -144,36 +131,22 @@ head
                 .bg-dark.clearfix
                     .inner-text
                         p.no-margin.color-light
-                            strong.fix-width-100
-                                i.fa.fa-calendar.margin-right-5
-                                |  Birthdate
-                            |  : 30/12/1994
+                            i.material-icons.md-16 today
+                            strong Birthdate: 30/12/1994
                             br
-                            strong.fix-width-100
-                                i.fa.fa-skype.margin-right-5
-                                |  Location
-                            |  : Kitchener, Ontario
+                            i.material-icons.md-16 maps_home_work
+                            strong Location: Kitchener, Ontario
                             br
-                            strong.fix-width-100
-                                i.fa.fa-phone.margin-right-5
-                                |  Phone
-                            |  : + 647-991-9361
+                            i.material-icons.md-16 settings_phone
+                            strong Phone: + 647-991-9361
                             br
-                            strong.fix-width-100
-                                i.fa.fa-envelope.margin-right-5
-                                |  Email
-                            |  : grahamwhite365@gmail.com
+                            i.material-icons.md-16 mail
+                            strong Email: grahamwhite365@gmail.com
                             br
-                            strong.fix-width-100
-                                i.fa.fa-globe.margin-right-5
-                                |  Website
-                            |  : www.shackntheback.ca
+                            i.material-icons.md-16 http
+                            strong Website: www.shackntheback.ca
                             br
-                            strong.fix-width-100
-                                i.fa.fa-location-arrow.margin-right-5
-                                |  Address
-                            |  : 5 Rittenhouse Rd. #308
-                            br
+
         // SERVICES
         .container
             ul.services.list-unstyled.clearfix
