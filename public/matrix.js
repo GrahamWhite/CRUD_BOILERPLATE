@@ -56,6 +56,16 @@
             }
         }
 
+        Matrix.prototype.transpose = function () {
+            let result = new Matrix(this.cols, this.rows);
+
+            for (let i = 0; i < this.rows; i++) {
+                for (let j = 0; j < this.cols; j++) {
+                    result.matrix[j][i] = this.matrix[i][j];
+                }
+            }
+            return result;
+        }
 
 
         Matrix.prototype.multiply = function (n) {
@@ -84,7 +94,7 @@
                     }
                 }
 
-                this.matrix = result.matrix;
+                return result;
 
             } else {
 

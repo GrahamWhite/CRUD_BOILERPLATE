@@ -21,16 +21,8 @@ div
             let m1 = new Matrix(2,2);
             m1.randomize();
             console.table(m1.matrix);
-            let m2 = new Matrix(2,2);
-            m2.randomize();
-            console.table(m2.matrix);
-            m1.multiply(m2);
-            console.table(m1.matrix);
-
-
-
-
-
+            let b = m1.transpose();
+            console.table(b.matrix)
 
         }
         init();
