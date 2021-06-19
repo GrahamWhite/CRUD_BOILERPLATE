@@ -69,7 +69,7 @@ h3 {
   font-size: 2em;
 }
 h4 {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 h5 {
   font-size: 1.2em;
@@ -264,8 +264,14 @@ blockquote {
   background: #ffffff;
   background: rgba(255, 255, 255, 0.3);
   letter-spacing: 2px;
-  padding: 10px 30px;
+  padding: 30px 90px;
+  margin-top: 15%;
   display: inline-block;
+
+
+/*  Custom EDIT*/
+  font-size: 1.3em;
+
 }
 .display-block {
   display: block;
@@ -526,7 +532,7 @@ blockquote {
   font-weight: 700;
   color: #323232;
   outline: none;
-  font-size: 12px;
+  font-size: 13px;
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -1102,7 +1108,9 @@ textArea.form-flat {
   left: 0;
   top: 0;
   height: 100%;
-  background: rgba(255, 255, 255, 0.4);
+
+  /*HOVER OPACITY FOR MAIN HEADER*/
+  background: rgba(255, 255, 255, 0.0);
 }
 .main-header .header-content-fixed:after {
   content: "";

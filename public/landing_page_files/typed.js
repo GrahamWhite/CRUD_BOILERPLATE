@@ -108,7 +108,7 @@
         build: function() {
             // Insert cursor
             if (this.showCursor === true) {
-                this.cursor = $("<span class=\"typed-cursor\">" + this.cursorChar + "</span>");
+                this.cursor = $("<i class=\"typed-cursor\">" + this.cursorChar + "</i>");
                 this.el.after(this.cursor);
             }
             this.init();
@@ -322,7 +322,7 @@
             var self = this;
             clearInterval(self.timeout);
             var id = this.el.attr('id');
-            this.el.after('<span id="' + id + '"/>')
+            this.el.after('<i id="' + id + '"/>')
             this.el.remove();
             this.cursor.remove();
             // Send the callback
@@ -344,7 +344,7 @@
     $.fn.typed.defaults = {
         strings: ["These are the default values...", "You know what you should do?", "Use your own!", "Have a great day!"],
         // typing speed
-        typeSpeed: 200,
+        typeSpeed: 0,
         // time before typing starts
         startDelay: 0,
         // backspacing speed

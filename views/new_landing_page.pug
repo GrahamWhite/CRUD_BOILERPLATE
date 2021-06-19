@@ -48,7 +48,7 @@ head
 
 
     // white skin
-    link(href='./landing_page_files/skin-white.css' rel='stylesheet')
+    link(href='./landing_page_files/skin-black.css' rel='stylesheet')
 
 
     //Dev fonts
@@ -76,9 +76,8 @@ head
             .whoim
                 .box-line.text-uppercase.text-bold
                     | Graham White
-            .v-content
                 .container
-                    h1.text-uppercase.color-dark.name I&apos;m Graham White
+                    //h1.text-uppercase.color-dark.name I&apos;m Graham White
                     h4.text-uppercase.color-dark.font-alt.job
                         span#typed.typed
                         span.typed-cursor .
@@ -128,18 +127,11 @@ head
                     .inner-text
                         h3.color-dark.no-margin-top Hello There!
                         p
-                            | Having just completed the three-year diploma program in IT Innovation and Design at Conestoga College, I am looking for my first opportunity to join the tech industry.  While I also have education and experience in food science, I came to realize that programming and design are where my passion truly lies.  Continuous learning and the opportunity to contribute in the development area are key objectives of mine.  I have taken many courses on AGILE development techniques and am able to work in a flexible environment.  I am becoming more confident in my abilities as a software developer, and I believe I can make a meaningful contribution to your team.
+                            | * THIS NEEDS REVISION !!!! Having just completed the three-year diploma program in IT Innovation and Design at Conestoga College, I am looking for my first opportunity to join the tech industry.  While I also have education and experience in food science, I came to realize that programming and design are where my passion truly lies.  Continuous learning and the opportunity to contribute in the development area are key objectives of mine.  I have taken many courses on AGILE development techniques and am able to work in a flexible environment.  I am becoming more confident in my abilities as a ___, and I believe I can make a meaningful contribution to your team.
+
                 .bg-dark.clearfix
                     .inner-text
                         p.no-margin.color-light
-                            i.material-icons.md-16 today
-                            strong Birthdate: 30/12/1994
-                            br
-                            br
-                            i.material-icons.md-16 maps_home_work
-                            strong Location: Kitchener, Ontario
-                            br
-                            br
                             i.material-icons.md-16 settings_phone
                             strong Phone: + 647-991-9361
                             br
@@ -174,7 +166,38 @@ head
     // END ABOUT ME
     // RESUME
     section#resume.block-section
+
+        .shape-bottom
+            .bg-secondary.block-title
+                .container
+                    h2.text-uppercase.color-dark.text-bold.no-margin Education
+                    .title-icon
+                        i.material-icons.md-24 school
+        .container-medium
+            .list-education
+                ul.list-unstyled.clearfix
+                    li
+                        .ic
+                            i.material-icons.md-24 school
+                        .number.font-alt 01
+                        .desc
+                            h5.text-uppercase.color-dark.text-bold IT Innovation and Design
+                            p.font-alt.color-dark Conestoga College
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            p.font-alt.color-dark   2021
+                    li
+                        .ic
+                            i.material-icons.md-24 school
+                        .number.font-alt 02
+                        .desc
+                            h5.text-uppercase.color-dark.text-bold Brewmaster and Brewery Operations Management
+                            p.font-alt.color-dark Niagara College
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            p.font-alt.color-dark  2016
         // EMPLOYEMNT
+        // EDUCATION
         .shape-bottom
             .bg-secondary.block-title
                 .container
@@ -214,39 +237,8 @@ head
                             p
                                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             p.font-alt.color-dark  2012-2019
+        //END EDUCATION
         // END EMPLOYEMNT
-        // EDUCATION
-        .shape-bottom
-            .bg-secondary.block-title
-                .container
-                    h2.text-uppercase.color-dark.text-bold.no-margin Education
-                    .title-icon
-                        i.material-icons.md-24 school
-        .container-medium
-            .list-education
-                ul.list-unstyled.clearfix
-                    li
-                        .ic
-                            i.material-icons.md-24 school
-                        .number.font-alt 01
-                        .desc
-                            h5.text-uppercase.color-dark.text-bold IT Innovation and Design
-                            p.font-alt.color-dark Conestoga College
-                            p
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            p.font-alt.color-dark   2021
-                    li
-                        .ic
-                            i.material-icons.md-24 school
-                        .number.font-alt 02
-                        .desc
-                            h5.text-uppercase.color-dark.text-bold Brewmaster and Brewery Operations Management
-                            p.font-alt.color-dark Niagara College
-                            p
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            p.font-alt.color-dark  2016
-
-        // END EDUCATION
     //    // SKILLS
     //    .shape-bottom
     //        .bg-secondary.block-title
@@ -1001,7 +993,7 @@ script.
             return arr;
         }
         draw() {
-            background(0, 1);
+            background(0, 3);
             for(let i = 0; i < this.cols; i++){
                 for(let j = 0; j < this.rows; j++){
                     let x = i * this.resolution;
