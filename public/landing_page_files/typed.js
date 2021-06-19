@@ -122,9 +122,11 @@
                 return;
             }
 
+            //CUSTOM VARIABLE - ORIGINALLY 30
+
             // varying values for setTimeout during typing
             // can't be global since number changes each time loop is executed
-            var humanize = Math.round(Math.random() * (100 - 30)) + this.typeSpeed;
+            var humanize = Math.round(Math.random() * (100 - 90)) + this.typeSpeed;
             var self = this;
 
             // ------------- optional ------------- //
