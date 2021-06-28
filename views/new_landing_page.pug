@@ -63,13 +63,6 @@ head
     script(type='text/javascript' charset='UTF-8' src='./landing_page_files/controls.js.download')
     script(type='text/javascript' charset='UTF-8' src='./landing_page_files/onion.js.download')
     script(type='text/javascript' charset='UTF-8' src='./landing_page_files/f.txt')
-    script.
-        let themeSwith = document.getElementById('theme_switch');
-        if(themeSwith){
-
-        }
-
-
 
 //.pace.pace-inactive
 //    .pace-progress(data-progress-text='100%' data-progress='99' style='width: 100%;')
@@ -99,7 +92,7 @@ head
                         .col-md-3
                             ul.breadcrumb.main-nav.no-space
                                 li.link-inpage
-                                    a#hireme-tab.link-inpage(href='#')
+                                    a#hireme-tab.link-inpage(href='#contact')
                                         i.material-icons.md-24 card_travel
                                         |  Hire Me Now
                         .col-md-6
@@ -107,15 +100,15 @@ head
                                 li.active
                                     a.link-inpage(href='#') Home
                                 li
-                                    a.link-inpage(href='#') About
+                                    a.link-inpage(href='#about') About
                                 li
-                                    a.link-inpage(href='#') Resume
+                                    a.link-inpage(href='#resume') Resume
                                 li
-                                    a.link-inpage(href='#') Portfolio
+                                    a.link-inpage(href='#portfolio') Portfolio
                                 li
-                                    a.link-inpage(href='#') Blog
+                                    a.link-inpage(href='#blog') Blog
                                 li
-                                    a#contact-tab.link-inpage(href='#') Contact
+                                    a#contact-tab.link-inpage(href='#contact') Contact
 
         // End Main navbar
     // End Main Header
@@ -257,114 +250,114 @@ head
                             p.font-alt.color-dark  2012-2019
         //END EDUCATION
         // END EMPLOYEMNT
-        // SKILLS
-        .shape-bottom
-            .bg-secondary.block-title
-                .container
-                    h2.text-uppercase.color-dark.text-bold.no-margin Skills
-                    .title-icon
-                        i.fa.fa-magic
-        .container-medium
-            // SKIL CHART TOP
-            ul.skill.top.list-unstyled.clearfix
-                li.col-sm-3.col-xs-6.no-padding
-                    .box.br-right.br-bottom
-                        span.chart(data-percent='96')
-                            span.percent 96
-                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
-                        .text-uppercase.color-dark Node.js / React.js / Angular.js
-                li.col-sm-3.col-xs-6.no-padding
-                    .box.br-right.br-bottom
-                        span.chart(data-percent='87')
-                            span.percent 87
-                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
-                        .text-uppercase.color-dark C# / .NET
-                li.col-sm-3.col-xs-6.no-padding
-                    .box.br-right.br-bottom
-                        span.chart(data-percent='89')
-                            span.percent 89
-                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
-                        .text-uppercase.color-dark MYSQL
-                li.col-sm-3.col-xs-6.no-padding
-                    .box.br-bottom
-                        span.chart(data-percent='70')
-                            span.percent 70
-                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
-                        .text-uppercase.color-dark PHP
-
-            // END SKIL CHART TOP
-            // SKIL CHART BOTTOM
-            ul.skill.bottom.list-unstyled.clearfix
-                li.col-sm-3.col-xs-6.no-padding
-                    .box.br-right
-                        span.chart(data-percent='60')
-                            span.percent 60
-                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
-                        .text-uppercase.color-dark Photoshop
-                li.col-sm-3.col-xs-6.no-padding
-                    .box.br-right
-                        span.chart(data-percent='99')
-                            span.percent 99
-                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
-                        .text-uppercase.color-dark HTML
-                li.col-sm-3.col-xs-6.no-padding
-                    .box.br-right
-                        span.chart(data-percent='60')
-                            span.percent 60
-                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
-                        .text-uppercase.color-dark CSS
-                li.col-sm-3.col-xs-6.no-padding
-                    .box
-                        span.chart(data-percent='77')
-                            span.percent 77
-                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
-                        .text-uppercase.color-dark BOOTSTRAP
-            // END SKIL CHART BOTTOM
-            // MORE SKILS
-            .title-border
-                h5.text-uppercase.color-dark.no-margin.text-bold MORE SKILLS
-            .row
-                .col-sm-6
-                    ul.list-unstyled.list-progress
-                        li
-                            .text-uppercase.color-dark.title
-                                span Creative
-                                small 80%
-                            .progress-line
-                                .line(data-holdwidth='20%' style='width: 80%;')
-                        li
-                            .text-uppercase.color-dark.title
-                                | Communication
-                                small 60%
-                            .progress-line
-                                .line(data-holdwidth='60%' style='width: 60%;')
-                        li
-                            .text-uppercase.color-dark.title
-                                | Leadership
-                                small 70%
-                            .progress-line
-                                .line(data-holdwidth='20%' style='width: 70%;')
-                .col-sm-6
-                    ul.list-unstyled.list-progress
-                        li
-                            .text-uppercase.color-dark.title
-                                | SKILL1
-                                small 80%
-                            .progress-line
-                                .line(data-holdwidth='80%' style='width: 80%;')
-                        li
-                            .text-uppercase.color-dark.title
-                                | SKILL2
-                                small 60%
-                            .progress-line
-                                .line(data-holdwidth='60%' style='width: 60%;')
-                        li
-                            .text-uppercase.color-dark.title
-                                | SKILL3
-                                small 70%
-                            .progress-line
-                                .line(data-holdwidth='70%' style='width: 70%;')
-            // END MORE SKILS
+        //// SKILLS
+        //.shape-bottom
+        //    .bg-secondary.block-title
+        //        .container
+        //            h2.text-uppercase.color-dark.text-bold.no-margin Skills
+        //            .title-icon
+        //                i.fa.fa-magic
+        //.container-medium
+        //    // SKIL CHART TOP
+        //    ul.skill.top.list-unstyled.clearfix
+        //        li.col-sm-3.col-xs-6.no-padding
+        //            .box.br-right.br-bottom
+        //                span.chart(data-percent='96')
+        //                    span.percent 96
+        //                    canvas(height='330' width='330' style='height: 110px; width: 110px;')
+        //                .text-uppercase.color-dark Node.js / React.js / Angular.js
+        //        li.col-sm-3.col-xs-6.no-padding
+        //            .box.br-right.br-bottom
+        //                span.chart(data-percent='87')
+        //                    span.percent 87
+        //                    canvas(height='330' width='330' style='height: 110px; width: 110px;')
+        //                .text-uppercase.color-dark C# / .NET
+        //        li.col-sm-3.col-xs-6.no-padding
+        //            .box.br-right.br-bottom
+        //                span.chart(data-percent='89')
+        //                    span.percent 89
+        //                    canvas(height='330' width='330' style='height: 110px; width: 110px;')
+        //                .text-uppercase.color-dark MYSQL
+        //        li.col-sm-3.col-xs-6.no-padding
+        //            .box.br-bottom
+        //                span.chart(data-percent='70')
+        //                    span.percent 70
+        //                    canvas(height='330' width='330' style='height: 110px; width: 110px;')
+        //                .text-uppercase.color-dark PHP
+        //
+        //    // END SKIL CHART TOP
+        //    // SKIL CHART BOTTOM
+        //    ul.skill.bottom.list-unstyled.clearfix
+        //        li.col-sm-3.col-xs-6.no-padding
+        //            .box.br-right
+        //                span.chart(data-percent='60')
+        //                    span.percent 60
+        //                    canvas(height='330' width='330' style='height: 110px; width: 110px;')
+        //                .text-uppercase.color-dark Photoshop
+        //        li.col-sm-3.col-xs-6.no-padding
+        //            .box.br-right
+        //                span.chart(data-percent='99')
+        //                    span.percent 99
+        //                    canvas(height='330' width='330' style='height: 110px; width: 110px;')
+        //                .text-uppercase.color-dark HTML
+        //        li.col-sm-3.col-xs-6.no-padding
+        //            .box.br-right
+        //                span.chart(data-percent='60')
+        //                    span.percent 60
+        //                    canvas(height='330' width='330' style='height: 110px; width: 110px;')
+        //                .text-uppercase.color-dark CSS
+        //        li.col-sm-3.col-xs-6.no-padding
+        //            .box
+        //                span.chart(data-percent='77')
+        //                    span.percent 77
+        //                    canvas(height='330' width='330' style='height: 110px; width: 110px;')
+        //                .text-uppercase.color-dark BOOTSTRAP
+        //    // END SKIL CHART BOTTOM
+        //    // MORE SKILS
+        //    .title-border
+        //        h5.text-uppercase.color-dark.no-margin.text-bold MORE SKILLS
+        //    .row
+        //        .col-sm-6
+        //            ul.list-unstyled.list-progress
+        //                li
+        //                    .text-uppercase.color-dark.title
+        //                        span Creative
+        //                        small 80%
+        //                    .progress-line
+        //                        .line(data-holdwidth='20%' style='width: 80%;')
+        //                li
+        //                    .text-uppercase.color-dark.title
+        //                        | Communication
+        //                        small 60%
+        //                    .progress-line
+        //                        .line(data-holdwidth='60%' style='width: 60%;')
+        //                li
+        //                    .text-uppercase.color-dark.title
+        //                        | Leadership
+        //                        small 70%
+        //                    .progress-line
+        //                        .line(data-holdwidth='20%' style='width: 70%;')
+        //        .col-sm-6
+        //            ul.list-unstyled.list-progress
+        //                li
+        //                    .text-uppercase.color-dark.title
+        //                        | SKILL1
+        //                        small 80%
+        //                    .progress-line
+        //                        .line(data-holdwidth='80%' style='width: 80%;')
+        //                li
+        //                    .text-uppercase.color-dark.title
+        //                        | SKILL2
+        //                        small 60%
+        //                    .progress-line
+        //                        .line(data-holdwidth='60%' style='width: 60%;')
+        //                li
+        //                    .text-uppercase.color-dark.title
+        //                        | SKILL3
+        //                        small 70%
+        //                    .progress-line
+        //                        .line(data-holdwidth='70%' style='width: 70%;')
+        //    // END MORE SKILS
             .white-space-50
         // DOWNLOAD & PRVIEW BTN
         .parallax-bg.bg1
@@ -379,123 +372,123 @@ head
                         |  Print CV
         // END DOWNLOAD & PRVIEW BTN
     // END SERVICES
-    //// PORTFOLIO
-    //section#portfolio.block-section
-    //    // PORTFOLIO TITLE
-    //    .shape-bottom
-    //        .bg-secondary.block-title
-    //            .container
-    //                h2.text-uppercase.color-dark.text-bold.no-margin Portfolio
-    //                .title-icon
-    //                    i.fa.fa-inbox
-    //    // END PORTFOLIO TITLE
-    //    // List WOrk
-    //    .block-page
-    //        .container-medium.clearfix
-    //            .row.list-work
-    //                .col-md-4.col-sm-6
-    //                    .box-work
-    //                        .work-preview
-    //                            img(src='./landing_page_files/p1.png' alt='')
-    //                            .hover
-    //                                .link-btns
-    //                                    a.galery-item(href='./landing_page_files/p1.png' title='pic 02')
-    //                                        i.fa.fa-search-plus
-    //                                    a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
-    //                                        i.fa.fa-link
-    //                                a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
-    //                .col-md-4.col-sm-6
-    //                    .box-work
-    //                        .work-preview
-    //                            img(src='./landing_page_files/p2.jpg' alt='')
-    //                            .hover
-    //                                .link-btns
-    //                                    a.galery-item(href='./landing_page_files/p2.jpg' title='pic 02')
-    //                                        i.fa.fa-search-plus
-    //                                    a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
-    //                                        i.fa.fa-link
-    //                                a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
-    //                .col-md-4.col-sm-6
-    //                    .box-work
-    //                        .work-preview
-    //                            img(src='./landing_page_files/p3.png' alt='')
-    //                            .hover
-    //                                .link-btns
-    //                                    a.galery-item(href='./landing_page_files/p3.png' title='pic 03')
-    //                                        i.fa.fa-search-plus
-    //                                    a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
-    //                                        i.fa.fa-link
-    //                                a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
-    //                .col-md-4.col-sm-6
-    //                    .box-work
-    //                        .work-preview
-    //                            img(src='./landing_page_files/p4.jpg' alt='')
-    //                            .hover
-    //                                .link-btns
-    //                                    a.galery-item(href='./landing_page_files/p4.jpg' title='pic 04')
-    //                                        i.fa.fa-search-plus
-    //                                    a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
-    //                                        i.fa.fa-link
-    //                                a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
-    //                .col-md-4.col-sm-6
-    //                    .box-work
-    //                        .work-preview
-    //                            img(src='./landing_page_files/p6.png' alt='')
-    //                            .hover
-    //                                .link-btns
-    //                                    a.galery-item(href='./landing_page_files/p6.png' title='pic 05')
-    //                                        i.fa.fa-search-plus
-    //                                    a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
-    //                                        i.fa.fa-link
-    //                                a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
-    //                .col-md-4.col-sm-6
-    //                    .box-work
-    //                        .work-preview
-    //                            img(src='./landing_page_files/p5.jpg' alt='')
-    //                            .hover
-    //                                .link-btns
-    //                                    a.galery-item(href='./landing_page_files/p5.jpg' title='pic 06')
-    //                                        i.fa.fa-search-plus
-    //                                    a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
-    //                                        i.fa.fa-link
-    //                                a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
-    //                .col-md-4.col-sm-6
-    //                    .box-work
-    //                        .work-preview
-    //                            img(src='./landing_page_files/p1.png' alt='')
-    //                            .hover
-    //                                .link-btns
-    //                                    a.galery-item(href='./landing_page_files/p1.png' title='pic 07')
-    //                                        i.fa.fa-search-plus
-    //                                    a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
-    //                                        i.fa.fa-link
-    //                                a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
-    //                .col-md-4.col-sm-6
-    //                    .box-work
-    //                        .work-preview
-    //                            img(src='./landing_page_files/p2.jpg' alt='')
-    //                            .hover
-    //                                .link-btns
-    //                                    a.galery-item(href='./landing_page_files/p2.jpg' title='pic 08')
-    //                                        i.fa.fa-search-plus
-    //                                    a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
-    //                                        i.fa.fa-link
-    //                                a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
-    //                .col-md-4.col-sm-6
-    //                    .box-work
-    //                        .work-preview
-    //                            img(src='./landing_page_files/p3.png' alt='')
-    //                            .hover
-    //                                .link-btns
-    //                                    a.galery-item(href='./landing_page_files/p3.png' title='pic 09')
-    //                                        i.fa.fa-search-plus
-    //                                    a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
-    //                                        i.fa.fa-link
-    //                                a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
-    //            // BTN SHOW MORE
-    //            .box-btn-more
-    //                a#more-work.btn.btn-flat-line.btn-link(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-list.html')  Show More
-    //    // END List WOrk
+    // PORTFOLIO
+    section#portfolio.block-section
+        // PORTFOLIO TITLE
+        .shape-bottom
+            .bg-secondary.block-title
+                .container
+                    h2.text-uppercase.color-dark.text-bold.no-margin Portfolio
+                    .title-icon
+                        i.fa.fa-inbox
+        // END PORTFOLIO TITLE
+        // List WOrk
+        .block-page
+            .container-medium.clearfix
+                .row.list-work
+                    .col-md-4.col-sm-6
+                        .box-work
+                            .work-preview
+                                img(src='images/meal1.jpg' alt='')
+                                .hover
+                                    .link-btns
+                                        a.galery-item(href='images/meal1.jpg' title='pic 02')
+                                            i.fa.fa-search-plus
+                                        a(href='#')
+                                            i.fa.fa-link
+                                    a.project-title(href='#') Project Title
+                    .col-md-4.col-sm-6
+                        .box-work
+                            .work-preview
+                                img(src='images/meal2.jpg' alt='')
+                                .hover
+                                    .link-btns
+                                        a.galery-item(href='images/meal2.jpg' title='pic 02')
+                                            i.fa.fa-search-plus
+                                        a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
+                                            i.fa.fa-link
+                                    a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
+                    .col-md-4.col-sm-6
+                        .box-work
+                            .work-preview
+                                img(src='images/meal3.jpg' alt='')
+                                .hover
+                                    .link-btns
+                                        a.galery-item(href='images/meal3.jpg' title='pic 03')
+                                            i.fa.fa-search-plus
+                                        a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
+                                            i.fa.fa-link
+                                    a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
+                    //.col-md-4.col-sm-6
+                    //    .box-work
+                    //        .work-preview
+                    //            img(src='./landing_page_files/p4.jpg' alt='')
+                    //            .hover
+                    //                .link-btns
+                    //                    a.galery-item(href='./landing_page_files/p4.jpg' title='pic 04')
+                    //                        i.fa.fa-search-plus
+                    //                    a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
+                    //                        i.fa.fa-link
+                    //                a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
+                    //.col-md-4.col-sm-6
+                    //    .box-work
+                    //        .work-preview
+                    //            img(src='./landing_page_files/p6.png' alt='')
+                    //            .hover
+                    //                .link-btns
+                    //                    a.galery-item(href='./landing_page_files/p6.png' title='pic 05')
+                    //                        i.fa.fa-search-plus
+                    //                    a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
+                    //                        i.fa.fa-link
+                    //                a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
+                    //.col-md-4.col-sm-6
+                    //    .box-work
+                    //        .work-preview
+                    //            img(src='./landing_page_files/p5.jpg' alt='')
+                    //            .hover
+                    //                .link-btns
+                    //                    a.galery-item(href='./landing_page_files/p5.jpg' title='pic 06')
+                    //                        i.fa.fa-search-plus
+                    //                    a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
+                    //                        i.fa.fa-link
+                    //                a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
+                    //.col-md-4.col-sm-6
+                    //    .box-work
+                    //        .work-preview
+                    //            img(src='./landing_page_files/p1.png' alt='')
+                    //            .hover
+                    //                .link-btns
+                    //                    a.galery-item(href='./landing_page_files/p1.png' title='pic 07')
+                    //                        i.fa.fa-search-plus
+                    //                    a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
+                    //                        i.fa.fa-link
+                    //                a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
+                    //.col-md-4.col-sm-6
+                    //    .box-work
+                    //        .work-preview
+                    //            img(src='./landing_page_files/p2.jpg' alt='')
+                    //            .hover
+                    //                .link-btns
+                    //                    a.galery-item(href='./landing_page_files/p2.jpg' title='pic 08')
+                    //                        i.fa.fa-search-plus
+                    //                    a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
+                    //                        i.fa.fa-link
+                    //                a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
+                    //.col-md-4.col-sm-6
+                    //    .box-work
+                    //        .work-preview
+                    //            img(src='./landing_page_files/p3.png' alt='')
+                    //            .hover
+                    //                .link-btns
+                    //                    a.galery-item(href='./landing_page_files/p3.png' title='pic 09')
+                    //                        i.fa.fa-search-plus
+                    //                    a(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html')
+                    //                        i.fa.fa-link
+                    //                a.project-title(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-detail.html') Project Title
+                // BTN SHOW MORE
+                .box-btn-more
+                    a#more-work.btn.btn-flat-line.btn-link(href='https://yobithemes.com/demo/html/whoiam/black/portfolio-list.html')  Show More
+        // END List WOrk
     //    // TESTIMONIAL
     //    .parallax-bg.black-light.bg2
     //        .container-medium
@@ -540,354 +533,354 @@ head
     //                                p.font-alt.no-margin.color-dark Robin - Html Founder
     //    // END TESTIMONIAL
     //// END PORTFOLIO
-    //// BLOG
-    //section#blog.block-section
-    //    // BLOG TITLE
-    //    .shape-bottom
-    //        .bg-secondary.block-title
-    //            .container
-    //                h2.text-uppercase.color-dark.text-bold.no-margin Blog
-    //                .title-icon
-    //                    i.fa.fa-comments-o
-    //    // END BLOG TITLE
-    //    .block-page
-    //        .container-medium
-    //            // LIST BLOG
-    //            ul.list-unstyled.list-blog
-    //                li
-    //                    .clearfix.box-blog
-    //                        .blog-bg(data-holdbg='assets/theme/images/blog/1.jpg' style='background-image: url("assets/theme/images/blog/1.jpg");')
-    //                            .blog-ic
-    //                                i.fa.fa-pencil
-    //                        .blog-content
-    //                            h5.text-uppercase.color-dark.text-bold Title BLog Goes Here.
-    //                            .post-meta.font-alt
-    //                                span
-    //                                    i.fa.fa-calendar
-    //                                    |  19th May 2014
-    //                                span
-    //                                    i.fa.fa-user
-    //                                    |  Jack
-    //                                span
-    //                                    i.fa.fa-folder-o
-    //                                    |  News
-    //                            p
-    //                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    //                            a.btn.btn-xs.btn-flat-solid.primary-btn(href='https://yobithemes.com/demo/html/whoiam/black/blog-detail.html') Read More
-    //                li
-    //                    .clearfix.box-blog
-    //                        .blog-bg(data-holdbg='assets/theme/images/blog/2.jpg' style='background-image: url("assets/theme/images/blog/2.jpg");')
-    //                            .blog-ic
-    //                                i.fa.fa-picture-o
-    //                        .blog-content
-    //                            h5.text-uppercase.color-dark.text-bold Title BLog Goes Here.
-    //                            .post-meta.font-alt
-    //                                span
-    //                                    i.fa.fa-calendar
-    //                                    |  19th May 2014
-    //                                span
-    //                                    i.fa.fa-user
-    //                                    |  Jack
-    //                                span
-    //                                    i.fa.fa-folder-o
-    //                                    |  News
-    //                            p
-    //                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    //                            a.btn.btn-xs.btn-flat-solid.primary-btn(href='https://yobithemes.com/demo/html/whoiam/black/blog-detail.html') Read More
-    //                li
-    //                    .clearfix.box-blog
-    //                        .blog-bg(data-holdbg='assets/theme/images/blog/4.jpg' style='background-image: url("assets/theme/images/blog/4.jpg");')
-    //                            .blog-ic
-    //                                i.fa.fa-camera-retro
-    //                        .blog-content
-    //                            h5.text-uppercase.color-dark.text-bold Title BLog Goes Here.
-    //                            .post-meta.font-alt
-    //                                span
-    //                                    i.fa.fa-calendar
-    //                                    |  19th May 2014
-    //                                span
-    //                                    i.fa.fa-user
-    //                                    |  Jack
-    //                                span
-    //                                    i.fa.fa-folder-o
-    //                                    |  News
-    //                            p
-    //                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    //                            a.btn.btn-xs.btn-flat-solid.primary-btn(href='https://yobithemes.com/demo/html/whoiam/black/blog-detail.html') Read More
-    //            // END LIST BLOG
-    //            // BTN SHOW MORE
-    //            .box-btn-more
-    //                a#more-blog.btn.btn-flat-line.btn-link(href='https://yobithemes.com/demo/html/whoiam/black/blog-list.html')  Show More
-    //// END BLOG
-    //// CONTACT
-    //section#contact.block-section
-    //    // CONTACT TITLE
-    //    .shape-bottom
-    //        .bg-secondary.block-title
-    //            .container
-    //                h2.text-uppercase.color-dark.text-bold.no-margin Contact
-    //                .title-icon
-    //                    i.fa.fa-envelope-o
-    //    // END CONTACT TITLE
-    //    .contact-area
-    //        .form-contact-area.clearfix
-    //            .inner-contact.clearfix
-    //                // TABS CONTACT
-    //                ul#myTab.nav.nav-tabs.flat-nav-tabs(role='tablist')
-    //                    li.active
-    //                        a(href='https://yobithemes.com/demo/html/whoiam/black/#tab0' role='tab' data-toggle='tab') Contact Me
-    //                    li
-    //                        a(href='https://yobithemes.com/demo/html/whoiam/black/#tab1' role='tab' data-toggle='tab') Hire Me
-    //                #myTabContent.tab-content.flat-tab-content
-    //                    #tab0.tab-pane.fade.in.active
-    //                        form#contactForm(method='post' name='contactForm' novalidate='novalidate')
-    //                            input(type='hidden' name='subject' value='Message Contact Form')
-    //                            .form-group
-    //                                label Your Name (*)
-    //                                input.form-control.form-flat(type='text' name='fullname' required='' aria-required='true')
-    //                            .form-group
-    //                                label Email (*)
-    //                                input.form-control.form-flat(type='email' name='email' required='' aria-required='true')
-    //                            .form-group
-    //                                label Your Message (*)
-    //                                textarea.form-control.form-flat(name='message' rows='8' required='' aria-required='true')
-    //                            .form-group
-    //                                #captcha1
-    //                                    .mycaptcha1.simpleCaptcha
-    //                                        .captchaIntro
-    //                                            p
-    //                                                | To make sure you are a human, we need you to click on the
-    //                                                span.captchaText key
-    //                                                | .
-    //                                        .captchaImages
-    //                                            img.captchaImage(src='./landing_page_files/simpleCaptcha.php' alt='' data-hash='49856987e1206e6b9fd6fa63209a1849a8458dae')
-    //                                            img.captchaImage(src='./landing_page_files/simpleCaptcha(1).php' alt='' data-hash='d6fe3e934b665bd3ee792fcfea3f8fdacae3526c')
-    //                                            img.captchaImage(src='./landing_page_files/simpleCaptcha(2).php' alt='' data-hash='e34a3829270e3797af8a81d8c37b78121f5992a1')
-    //                                            img.captchaImage(src='./landing_page_files/simpleCaptcha(3).php' alt='' data-hash='ebe7d5df0696c5c29a1776637fb6bdc4e83ee30d')
-    //                                            img.captchaImage(src='./landing_page_files/simpleCaptcha(4).php' alt='' data-hash='8c809966da7240dee30d631b12c810d2b9534b2e')
-    //                                        input.simpleCaptchaInput(name='captchaSelection' type='hidden' value='')
-    //                            .form-group
-    //                                button.btn.btn-flat-solid.primary-btn(type='submit') Send Message
-    //                            .form-group
-    //                                .preload-submit.hidden
-    //                                    hr
-    //                                    i.fa.fa-spinner.fa-spin
-    //                                    |  Please Wait ...
-    //                                .message-submit.error.hidden
-    //                    #tab1.tab-pane.fade
-    //                        form#hireForm(method='post' name='hireForm' novalidate='novalidate')
-    //                            input(type='hidden' name='subject' value='Message Hire Form')
-    //                            input#file-att(type='hidden' name='file' value='')
-    //                            .form-group
-    //                                label Your Name (*)
-    //                                input.form-control.form-flat(type='text' name='fullname' required='')
-    //                            .form-group
-    //                                label Email (*)
-    //                                input.form-control.form-flat(type='email' name='email' required='')
-    //                            .form-group
-    //                                label Short Description About of Project (*)
-    //                                textarea.form-control.form-flat(name='message' rows='8' required='')
-    //                            .form-group
-    //                                label
-    //                                    | Attach Your Document
-    //                                    span.display-block.color-dark (only .pdf  allowed , max size 200Kb)
-    //                                .clearfix
-    //                                    input#upload-btn.btn.btn-flat-solid.btn-file.btn-xs.btn-default.clearfix(type='button' value='Choose file')
-    //                                    #errormsg.clearfix.error
-    //                                    #pic-progress-wrap.progress-wrap
-    //                                    #picbox.attbox.color-dark
-    //                            .form-group
-    //                                #captcha2
-    //                                    .mycaptcha1.simpleCaptcha
-    //                                        .captchaIntro
-    //                                            p
-    //                                                | To make sure you are a human, we need you to click on the
-    //                                                span.captchaText key
-    //                                                | .
-    //                                        .captchaImages
-    //                                            img.captchaImage(src='./landing_page_files/simpleCaptcha.php' alt='' data-hash='49856987e1206e6b9fd6fa63209a1849a8458dae')
-    //                                            img.captchaImage(src='./landing_page_files/simpleCaptcha(1).php' alt='' data-hash='d6fe3e934b665bd3ee792fcfea3f8fdacae3526c')
-    //                                            img.captchaImage(src='./landing_page_files/simpleCaptcha(2).php' alt='' data-hash='e34a3829270e3797af8a81d8c37b78121f5992a1')
-    //                                            img.captchaImage(src='./landing_page_files/simpleCaptcha(3).php' alt='' data-hash='ebe7d5df0696c5c29a1776637fb6bdc4e83ee30d')
-    //                                            img.captchaImage(src='./landing_page_files/simpleCaptcha(4).php' alt='' data-hash='8c809966da7240dee30d631b12c810d2b9534b2e')
-    //                                        input.simpleCaptchaInput(name='captchaSelection' type='hidden' value='')
-    //                            .form-group
-    //                                button.btn.btn-flat-solid.primary-btn(type='submit') Send Request
-    //                            .form-group
-    //                                .preload-submit.hidden
-    //                                    hr
-    //                                    i.fa.fa-spinner.fa-spin
-    //                                    |  Please Wait ...
-    //                                .message-submit.error.hidden
-    //                // End Tabs
-    //        // MAP
-    //        #map-contact.map-area(style='position: relative; overflow: hidden;')
-    //            div(style='height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);')
-    //                .gm-style(style='position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;')
-    //                    div
-    //                        button(aria-label='Keyboard shortcuts' style='z-index: 1000002; cursor: pointer; position: absolute; background-color: transparent; border: none; padding: 0px; left: -100000px; top: -100000px;')
-    //                    div(tabindex='0' aria-label='Map' aria-roledescription='map' role='group' style='position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url("https://maps.gstatic.com/mapfiles/openhand_8_8.cur"), default;')
-    //                        div(style='z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);')
-    //                            div(style='position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;')
-    //                                div(style='position: absolute; left: 0px; top: 0px; z-index: 0;')
-    //                                    div(style='position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -44, -20);')
-    //                                        div(style='position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;')
-    //                                            div(style='width: 256px; height: 256px;')
-    //                                        div(style='position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;')
-    //                                            div(style='width: 256px; height: 256px;')
-    //                                        div(style='position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;')
-    //                                            div(style='width: 256px; height: 256px;')
-    //                                        div(style='position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;')
-    //                                            div(style='width: 256px; height: 256px;')
-    //                                        div(style='position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;')
-    //                                            div(style='width: 256px; height: 256px;')
-    //                                        div(style='position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;')
-    //                                            div(style='width: 256px; height: 256px;')
-    //                                        div(style='position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;')
-    //                                            div(style='width: 256px; height: 256px;')
-    //                            div(style='position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;')
-    //                            div(style='position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;')
-    //                            div(style='position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;')
-    //                                div(style='width: 32px; height: 37px; overflow: hidden; position: absolute; left: -16px; top: -37px; z-index: 0;')
-    //                                    img(alt='' src='./landing_page_files/marker.png' draggable='false' style='position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 37px; border: 0px; padding: 0px; margin: 0px; max-width: none;')
-    //                                div(style='position: absolute; left: 0px; top: 0px; z-index: -1;')
-    //                                    div(style='position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -44, -20);')
-    //                                        div(style='width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;')
-    //                                        div(style='width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;')
-    //                                        div(style='width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;')
-    //                                        div(style='width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;')
-    //                                        div(style='width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;')
-    //                                        div(style='width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 0px;')
-    //                                        div(style='width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 0px;')
-    //                            div(style='position: absolute; left: 0px; top: 0px; z-index: 0;')
-    //                                div(style='position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -44, -20);')
-    //                                    div(style='position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;')
-    //                                        img(draggable='false' alt='' role='presentation' src='./landing_page_files/vt' style='width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
-    //                                    div(style='position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;')
-    //                                        img(draggable='false' alt='' role='presentation' src='./landing_page_files/vt(1)' style='width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
-    //                                    div(style='position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;')
-    //                                        img(draggable='false' alt='' role='presentation' src='./landing_page_files/vt(2)' style='width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
-    //                                    div(style='position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;')
-    //                                        img(draggable='false' alt='' role='presentation' src='./landing_page_files/vt(3)' style='width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
-    //                                    div(style='position: absolute; left: 512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;')
-    //                                        img(draggable='false' alt='' role='presentation' src='./landing_page_files/vt(4)' style='width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
-    //                                    div(style='position: absolute; left: -512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;')
-    //                                        img(draggable='false' alt='' role='presentation' src='./landing_page_files/vt(5)' style='width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
-    //                                    div(style='position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;')
-    //                                        img(draggable='false' alt='' role='presentation' src='./landing_page_files/vt(6)' style='width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
-    //                        .gm-style-pbc(style='z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;')
-    //                            p.gm-style-pbt
-    //                        div(style='z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;')
-    //                            div(style='z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);')
-    //                                div(style='position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;')
-    //                                div(style='position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;')
-    //                                div(style='position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;')
-    //                                    div(title='' role='button' tabindex='0' style='width: 48px; height: 53px; overflow: hidden; position: absolute; cursor: pointer; left: -24px; top: -45px; z-index: 0;')
-    //                                        img(alt='' src='./landing_page_files/transparent.png' draggable='false' style='width: 48px; height: 53px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
-    //                                div(style='position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;')
-    //                    iframe(aria-hidden='true' frameborder='0' tabindex='-1' style='z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;' src='./landing_page_files/saved_resource.html')
-    //                    div(style='pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);')
-    //                    div
-    //                    div
-    //                    div
-    //                    div
-    //                    div
-    //                        button.gm-control-active.gm-fullscreen-control(draggable='false' title='Toggle fullscreen view' aria-label='Toggle fullscreen view' type='button' style='background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;')
-    //                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
-    //                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
-    //                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
-    //                    div
-    //                    div
-    //                    div
-    //                    div
-    //                        .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom(draggable='false' controlwidth='0' controlheight='0' style='margin: 10px; user-select: none; position: absolute; display: none; bottom: 26px; left: 0px;')
-    //                            .gmnoprint(controlwidth='40' controlheight='40' style='display: none; position: absolute;')
-    //                                div(style='background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 40px; height: 40px;')
-    //                                    button.gm-control-active(draggable='false' title='Rotate map clockwise' aria-label='Rotate map clockwise' type='button' style='background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px;')
-    //                                        img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E' style='width: 20px; height: 20px;')
-    //                                        img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E' style='width: 20px; height: 20px;')
-    //                                        img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E' style='width: 20px; height: 20px;')
-    //                                    div(style='position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;')
-    //                                    button.gm-control-active(draggable='false' title='Rotate map counterclockwise' aria-label='Rotate map counterclockwise' type='button' style='background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px; transform: scaleX(-1);')
-    //                                        img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E' style='width: 20px; height: 20px;')
-    //                                        img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E' style='width: 20px; height: 20px;')
-    //                                        img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E' style='width: 20px; height: 20px;')
-    //                                    div(style='position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;')
-    //                                    button.gm-tilt.gm-control-active(draggable='false' title='Tilt map' aria-label='Tilt map' type='button' style='background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; top: 0px; left: 0px; overflow: hidden; width: 40px; height: 40px;')
-    //                                        img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E' style='width: 18px;')
-    //                                        img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E' style='width: 18px;')
-    //                                        img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E' style='width: 18px;')
-    //                    div
-    //                        .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom(draggable='false' controlwidth='40' controlheight='113' style='margin: 10px; user-select: none; position: absolute; bottom: 127px; right: 40px;')
-    //                            div(style='position: absolute; left: 20px; top: 0px;')
-    //                            .gmnoprint(controlwidth='40' controlheight='81' style='position: absolute; left: 0px; top: 32px; display: none;')
-    //                                div(draggable='false' style='user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;')
-    //                                    button.gm-control-active(draggable='false' title='Zoom in' aria-label='Zoom in' type='button' style='background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;')
-    //                                        img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
-    //                                        img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
-    //                                        img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
-    //                                    div(style='position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;')
-    //                                    button.gm-control-active(draggable='false' title='Zoom out' aria-label='Zoom out' type='button' style='background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;')
-    //                                        img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
-    //                                        img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
-    //                                        img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
-    //                    div
-    //                        div(style='margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;')
-    //                            a(target='_blank' rel='noopener' href='https://maps.google.com/maps?ll=-6.6,106.8&z=15&t=m&hl=en-US&gl=US&mapclient=apiv3' title='Open this area in Google Maps (opens a new window)' style='position: static; overflow: visible; float: none; display: inline;')
-    //                                div(style='width: 66px; height: 26px; cursor: pointer;')
-    //                                    img(alt='' src='./landing_page_files/google4_hdpi.png' draggable='false' style='position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;')
-    //                    div
-    //                    div
-    //                        .gmnoprint(style='z-index: 1000001; position: absolute; right: 159px; bottom: 0px;')
-    //                            .gm-style-cc(draggable='false' style='user-select: none; height: 14px; line-height: 14px;')
-    //                                div(style='opacity: 0.7; width: 100%; height: 100%; position: absolute;')
-    //                                    div(style='width: 1px;')
-    //                                    div(style='background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;')
-    //                                div(style='position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;')
-    //                                    button(draggable='false' title='Keyboard shortcuts' aria-label='Keyboard shortcuts' type='button' style='background: none; display: inline-block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit;') Keyboard shortcuts
-    //                        .gmnoprint(style='z-index: 1000001; position: absolute; right: 72px; bottom: 0px; width: 87px;')
-    //                            .gm-style-cc(draggable='false' style='user-select: none; height: 14px; line-height: 14px;')
-    //                                div(style='opacity: 0.7; width: 100%; height: 100%; position: absolute;')
-    //                                    div(style='width: 1px;')
-    //                                    div(style='background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;')
-    //                                div(style='position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;')
-    //                                    button(draggable='false' title='Map Data' aria-label='Map Data' type='button' style='background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit;') Map Data
-    //                                    span Map data &copy;2021
-    //                        .gmnoprint.gm-style-cc(draggable='false' style='z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;')
-    //                            div(style='opacity: 0.7; width: 100%; height: 100%; position: absolute;')
-    //                                div(style='width: 1px;')
-    //                                div(style='background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;')
-    //                            div(style='position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;')
-    //                                a(href='https://www.google.com/intl/en-US_US/help/terms_maps.html' target='_blank' rel='noopener' style='text-decoration: none; cursor: pointer; color: rgb(0, 0, 0);') Terms of Use
-    //                        .gmnoscreen(style='position: absolute; right: 0px; bottom: 0px;')
-    //                            div(style='font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(0, 0, 0); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);') Map data &copy;2021
-    //            div(style='background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;')
-    //                div
-    //                    img(alt='' src='./landing_page_files/google_gray.svg' draggable='false' style='padding: 0px; margin: 0px; border: 0px; height: 17px; vertical-align: middle; width: 52px; user-select: none;')
-    //                div(style='line-height: 20px; margin: 15px 0px;')
-    //                    span(style='color: rgba(0, 0, 0, 0.87); font-size: 14px;') This page can&apos;t load Google Maps correctly.
-    //                table(style='width: 100%;')
-    //                    tr
-    //                        td(style='line-height: 16px; vertical-align: middle;')
-    //                            a(href='https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&utm_medium=degraded&utm_campaign=keyless#api-key-and-billing-errors' target='_blank' rel='noopener' style='color: rgba(0, 0, 0, 0.54); font-size: 12px;') Do you own this website?
-    //                        td(style='text-align: right;')
-    //                            button.dismissButton OK
-    //        .hidden.map-contact-body
-    //            .map-content
-    //                h4.no-margin-top.font-alt Iam Here
-    //                p
-    //                    i.fa.fa-map-marker
-    //                    strong Address:
-    //                    |  8723 Bogor, West Java
-    //                p
-    //                    i.fa.fa-mobile
-    //                    strong Phone:
-    //                    |  87-3898-221
-    //                p
-    //                    i.fa.fa-envelope
-    //                    strong Email:
-    //                    |  someone@company.com
-    //        // END MAP
+    // BLOG
+    section#blog.block-section
+        // BLOG TITLE
+        .shape-bottom
+            .bg-secondary.block-title
+                .container
+                    h2.text-uppercase.color-dark.text-bold.no-margin Blog
+                    .title-icon
+                        i.fa.fa-comments-o
+        // END BLOG TITLE
+        .block-page
+            .container-medium
+                // LIST BLOG
+                ul.list-unstyled.list-blog
+                    li
+                        .clearfix.box-blog
+                            .blog-bg(data-holdbg='assets/theme/images/blog/1.jpg' style='background-image: url("assets/theme/images/blog/1.jpg");')
+                                .blog-ic
+                                    i.fa.fa-pencil
+                            .blog-content
+                                h5.text-uppercase.color-dark.text-bold Title BLog Goes Here.
+                                .post-meta.font-alt
+                                    span
+                                        i.fa.fa-calendar
+                                        |  19th May 2014
+                                    span
+                                        i.fa.fa-user
+                                        |  Jack
+                                    span
+                                        i.fa.fa-folder-o
+                                        |  News
+                                p
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                a.btn.btn-xs.btn-flat-solid.primary-btn(href='https://yobithemes.com/demo/html/whoiam/black/blog-detail.html') Read More
+                    li
+                        .clearfix.box-blog
+                            .blog-bg(data-holdbg='assets/theme/images/blog/2.jpg' style='background-image: url("assets/theme/images/blog/2.jpg");')
+                                .blog-ic
+                                    i.fa.fa-picture-o
+                            .blog-content
+                                h5.text-uppercase.color-dark.text-bold Title BLog Goes Here.
+                                .post-meta.font-alt
+                                    span
+                                        i.fa.fa-calendar
+                                        |  19th May 2014
+                                    span
+                                        i.fa.fa-user
+                                        |  Jack
+                                    span
+                                        i.fa.fa-folder-o
+                                        |  News
+                                p
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                a.btn.btn-xs.btn-flat-solid.primary-btn(href='https://yobithemes.com/demo/html/whoiam/black/blog-detail.html') Read More
+                    li
+                        .clearfix.box-blog
+                            .blog-bg(data-holdbg='assets/theme/images/blog/4.jpg' style='background-image: url("assets/theme/images/blog/4.jpg");')
+                                .blog-ic
+                                    i.fa.fa-camera-retro
+                            .blog-content
+                                h5.text-uppercase.color-dark.text-bold Title BLog Goes Here.
+                                .post-meta.font-alt
+                                    span
+                                        i.fa.fa-calendar
+                                        |  19th May 2014
+                                    span
+                                        i.fa.fa-user
+                                        |  Jack
+                                    span
+                                        i.fa.fa-folder-o
+                                        |  News
+                                p
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                a.btn.btn-xs.btn-flat-solid.primary-btn(href='#') Read More
+                // END LIST BLOG
+                // BTN SHOW MORE
+                .box-btn-more
+                    a#more-blog.btn.btn-flat-line.btn-link(href='#')  Show More
+    // END BLOG
+    // CONTACT
+    section#contact.block-section
+        // CONTACT TITLE
+        .shape-bottom
+            .bg-secondary.block-title
+                .container
+                    h2.text-uppercase.color-dark.text-bold.no-margin Contact
+                    .title-icon
+                        i.fa.fa-envelope-o
+        // END CONTACT TITLE
+        .contact-area
+            .form-contact-area.clearfix
+                .inner-contact.clearfix
+                    // TABS CONTACT
+                    ul#myTab.nav.nav-tabs.flat-nav-tabs(role='tablist')
+                        li.active
+                            a(href='#' role='tab' data-toggle='tab') Contact Me
+                        li
+                            a(href='#' role='tab' data-toggle='tab') Hire Me
+                    #myTabContent.tab-content.flat-tab-content
+                        #tab0.tab-pane.fade.in.active
+                            form#contactForm(method='post' name='contactForm' novalidate='novalidate')
+                                input(type='hidden' name='subject' value='Message Contact Form')
+                                .form-group
+                                    label Your Name (*)
+                                    input.form-control.form-flat(type='text' name='fullname' required='' aria-required='true')
+                                .form-group
+                                    label Email (*)
+                                    input.form-control.form-flat(type='email' name='email' required='' aria-required='true')
+                                .form-group
+                                    label Your Message (*)
+                                    textarea.form-control.form-flat(name='message' rows='8' required='' aria-required='true')
+                                .form-group
+                                    #captcha1
+                                        .mycaptcha1.simpleCaptcha
+                                            .captchaIntro
+                                                p
+                                                    | To make sure you are a human, we need you to click on the
+                                                    span.captchaText key
+                                                    | .
+                                            .captchaImages
+                                                img.captchaImage(src='./landing_page_files/simpleCaptcha.php' alt='' data-hash='49856987e1206e6b9fd6fa63209a1849a8458dae')
+                                                img.captchaImage(src='./landing_page_files/simpleCaptcha(1).php' alt='' data-hash='d6fe3e934b665bd3ee792fcfea3f8fdacae3526c')
+                                                img.captchaImage(src='./landing_page_files/simpleCaptcha(2).php' alt='' data-hash='e34a3829270e3797af8a81d8c37b78121f5992a1')
+                                                img.captchaImage(src='./landing_page_files/simpleCaptcha(3).php' alt='' data-hash='ebe7d5df0696c5c29a1776637fb6bdc4e83ee30d')
+                                                img.captchaImage(src='./landing_page_files/simpleCaptcha(4).php' alt='' data-hash='8c809966da7240dee30d631b12c810d2b9534b2e')
+                                            input.simpleCaptchaInput(name='captchaSelection' type='hidden' value='')
+                                .form-group
+                                    button.btn.btn-flat-solid.primary-btn(type='submit') Send Message
+                                .form-group
+                                    .preload-submit.hidden
+                                        hr
+                                        i.fa.fa-spinner.fa-spin
+                                        |  Please Wait ...
+                                    .message-submit.error.hidden
+                        #tab1.tab-pane.fade
+                            form#hireForm(method='post' name='hireForm' novalidate='novalidate')
+                                input(type='hidden' name='subject' value='Message Hire Form')
+                                input#file-att(type='hidden' name='file' value='')
+                                .form-group
+                                    label Your Name (*)
+                                    input.form-control.form-flat(type='text' name='fullname' required='')
+                                .form-group
+                                    label Email (*)
+                                    input.form-control.form-flat(type='email' name='email' required='')
+                                .form-group
+                                    label Short Description About of Project (*)
+                                    textarea.form-control.form-flat(name='message' rows='8' required='')
+                                .form-group
+                                    label
+                                        | Attach Your Document
+                                        span.display-block.color-dark (only .pdf  allowed , max size 200Kb)
+                                    .clearfix
+                                        input#upload-btn.btn.btn-flat-solid.btn-file.btn-xs.btn-default.clearfix(type='button' value='Choose file')
+                                        #errormsg.clearfix.error
+                                        #pic-progress-wrap.progress-wrap
+                                        #picbox.attbox.color-dark
+                                .form-group
+                                    #captcha2
+                                        .mycaptcha1.simpleCaptcha
+                                            .captchaIntro
+                                                p
+                                                    | To make sure you are a human, we need you to click on the
+                                                    span.captchaText key
+                                                    | .
+                                            .captchaImages
+                                                img.captchaImage(src='./landing_page_files/simpleCaptcha.php' alt='' data-hash='49856987e1206e6b9fd6fa63209a1849a8458dae')
+                                                img.captchaImage(src='./landing_page_files/simpleCaptcha(1).php' alt='' data-hash='d6fe3e934b665bd3ee792fcfea3f8fdacae3526c')
+                                                img.captchaImage(src='./landing_page_files/simpleCaptcha(2).php' alt='' data-hash='e34a3829270e3797af8a81d8c37b78121f5992a1')
+                                                img.captchaImage(src='./landing_page_files/simpleCaptcha(3).php' alt='' data-hash='ebe7d5df0696c5c29a1776637fb6bdc4e83ee30d')
+                                                img.captchaImage(src='./landing_page_files/simpleCaptcha(4).php' alt='' data-hash='8c809966da7240dee30d631b12c810d2b9534b2e')
+                                            input.simpleCaptchaInput(name='captchaSelection' type='hidden' value='')
+                                .form-group
+                                    button.btn.btn-flat-solid.primary-btn(type='submit') Send Request
+                                .form-group
+                                    .preload-submit.hidden
+                                        hr
+                                        i.fa.fa-spinner.fa-spin
+                                        |  Please Wait ...
+                                    .message-submit.error.hidden
+                    // End Tabs
+            // MAP
+            #map-contact.map-area(style='position: relative; overflow: hidden;')
+                div(style='height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);')
+                    .gm-style(style='position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;')
+                        div
+                            button(aria-label='Keyboard shortcuts' style='z-index: 1000002; cursor: pointer; position: absolute; background-color: transparent; border: none; padding: 0px; left: -100000px; top: -100000px;')
+                        div(tabindex='0' aria-label='Map' aria-roledescription='map' role='group' style='position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url("https://maps.gstatic.com/mapfiles/openhand_8_8.cur"), default;')
+                            div(style='z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);')
+                                div(style='position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;')
+                                    div(style='position: absolute; left: 0px; top: 0px; z-index: 0;')
+                                        div(style='position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -44, -20);')
+                                            div(style='position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;')
+                                                div(style='width: 256px; height: 256px;')
+                                            div(style='position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;')
+                                                div(style='width: 256px; height: 256px;')
+                                            div(style='position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;')
+                                                div(style='width: 256px; height: 256px;')
+                                            div(style='position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;')
+                                                div(style='width: 256px; height: 256px;')
+                                            div(style='position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;')
+                                                div(style='width: 256px; height: 256px;')
+                                            div(style='position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;')
+                                                div(style='width: 256px; height: 256px;')
+                                            div(style='position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;')
+                                                div(style='width: 256px; height: 256px;')
+                                div(style='position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;')
+                                div(style='position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;')
+                                div(style='position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;')
+                                    div(style='width: 32px; height: 37px; overflow: hidden; position: absolute; left: -16px; top: -37px; z-index: 0;')
+                                        img(alt='' src='./landing_page_files/marker.png' draggable='false' style='position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 37px; border: 0px; padding: 0px; margin: 0px; max-width: none;')
+                                    div(style='position: absolute; left: 0px; top: 0px; z-index: -1;')
+                                        div(style='position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -44, -20);')
+                                            div(style='width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;')
+                                            div(style='width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;')
+                                            div(style='width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;')
+                                            div(style='width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;')
+                                            div(style='width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;')
+                                            div(style='width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 0px;')
+                                            div(style='width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 0px;')
+                                div(style='position: absolute; left: 0px; top: 0px; z-index: 0;')
+                                    div(style='position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -44, -20);')
+                                        div(style='position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;')
+                                            img(draggable='false' alt='' role='presentation' src='./landing_page_files/vt' style='width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
+                                        div(style='position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;')
+                                            img(draggable='false' alt='' role='presentation' src='./landing_page_files/vt(1)' style='width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
+                                        div(style='position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;')
+                                            img(draggable='false' alt='' role='presentation' src='./landing_page_files/vt(2)' style='width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
+                                        div(style='position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;')
+                                            img(draggable='false' alt='' role='presentation' src='./landing_page_files/vt(3)' style='width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
+                                        div(style='position: absolute; left: 512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;')
+                                            img(draggable='false' alt='' role='presentation' src='./landing_page_files/vt(4)' style='width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
+                                        div(style='position: absolute; left: -512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;')
+                                            img(draggable='false' alt='' role='presentation' src='./landing_page_files/vt(5)' style='width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
+                                        div(style='position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;')
+                                            img(draggable='false' alt='' role='presentation' src='./landing_page_files/vt(6)' style='width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
+                            .gm-style-pbc(style='z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;')
+                                p.gm-style-pbt
+                            div(style='z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;')
+                                div(style='z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);')
+                                    div(style='position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;')
+                                    div(style='position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;')
+                                    div(style='position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;')
+                                        div(title='' role='button' tabindex='0' style='width: 48px; height: 53px; overflow: hidden; position: absolute; cursor: pointer; left: -24px; top: -45px; z-index: 0;')
+                                            img(alt='' src='./landing_page_files/transparent.png' draggable='false' style='width: 48px; height: 53px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;')
+                                    div(style='position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;')
+                        iframe(aria-hidden='true' frameborder='0' tabindex='-1' style='z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;' src='./landing_page_files/saved_resource.html')
+                        div(style='pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);')
+                        div
+                        div
+                        div
+                        div
+                        div
+                            button.gm-control-active.gm-fullscreen-control(draggable='false' title='Toggle fullscreen view' aria-label='Toggle fullscreen view' type='button' style='background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;')
+                                img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
+                                img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
+                                img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
+                        div
+                        div
+                        div
+                        div
+                            .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom(draggable='false' controlwidth='0' controlheight='0' style='margin: 10px; user-select: none; position: absolute; display: none; bottom: 26px; left: 0px;')
+                                .gmnoprint(controlwidth='40' controlheight='40' style='display: none; position: absolute;')
+                                    div(style='background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 40px; height: 40px;')
+                                        button.gm-control-active(draggable='false' title='Rotate map clockwise' aria-label='Rotate map clockwise' type='button' style='background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px;')
+                                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E' style='width: 20px; height: 20px;')
+                                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E' style='width: 20px; height: 20px;')
+                                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E' style='width: 20px; height: 20px;')
+                                        div(style='position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;')
+                                        button.gm-control-active(draggable='false' title='Rotate map counterclockwise' aria-label='Rotate map counterclockwise' type='button' style='background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px; transform: scaleX(-1);')
+                                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E' style='width: 20px; height: 20px;')
+                                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E' style='width: 20px; height: 20px;')
+                                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E' style='width: 20px; height: 20px;')
+                                        div(style='position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;')
+                                        button.gm-tilt.gm-control-active(draggable='false' title='Tilt map' aria-label='Tilt map' type='button' style='background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; top: 0px; left: 0px; overflow: hidden; width: 40px; height: 40px;')
+                                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E' style='width: 18px;')
+                                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E' style='width: 18px;')
+                                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E' style='width: 18px;')
+                        div
+                            .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom(draggable='false' controlwidth='40' controlheight='113' style='margin: 10px; user-select: none; position: absolute; bottom: 127px; right: 40px;')
+                                div(style='position: absolute; left: 20px; top: 0px;')
+                                .gmnoprint(controlwidth='40' controlheight='81' style='position: absolute; left: 0px; top: 32px; display: none;')
+                                    div(draggable='false' style='user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;')
+                                        button.gm-control-active(draggable='false' title='Zoom in' aria-label='Zoom in' type='button' style='background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;')
+                                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
+                                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
+                                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
+                                        div(style='position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;')
+                                        button.gm-control-active(draggable='false' title='Zoom out' aria-label='Zoom out' type='button' style='background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;')
+                                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
+                                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
+                                            img(src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E' alt='' style='height: 18px; width: 18px;')
+                        div
+                            div(style='margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;')
+                                a(target='_blank' rel='noopener' href='https://maps.google.com/maps?ll=-6.6,106.8&z=15&t=m&hl=en-US&gl=US&mapclient=apiv3' title='Open this area in Google Maps (opens a new window)' style='position: static; overflow: visible; float: none; display: inline;')
+                                    div(style='width: 66px; height: 26px; cursor: pointer;')
+                                        img(alt='' src='./landing_page_files/google4_hdpi.png' draggable='false' style='position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;')
+                        div
+                        div
+                            .gmnoprint(style='z-index: 1000001; position: absolute; right: 159px; bottom: 0px;')
+                                .gm-style-cc(draggable='false' style='user-select: none; height: 14px; line-height: 14px;')
+                                    div(style='opacity: 0.7; width: 100%; height: 100%; position: absolute;')
+                                        div(style='width: 1px;')
+                                        div(style='background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;')
+                                    div(style='position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;')
+                                        button(draggable='false' title='Keyboard shortcuts' aria-label='Keyboard shortcuts' type='button' style='background: none; display: inline-block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit;') Keyboard shortcuts
+                            .gmnoprint(style='z-index: 1000001; position: absolute; right: 72px; bottom: 0px; width: 87px;')
+                                .gm-style-cc(draggable='false' style='user-select: none; height: 14px; line-height: 14px;')
+                                    div(style='opacity: 0.7; width: 100%; height: 100%; position: absolute;')
+                                        div(style='width: 1px;')
+                                        div(style='background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;')
+                                    div(style='position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;')
+                                        button(draggable='false' title='Map Data' aria-label='Map Data' type='button' style='background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit;') Map Data
+                                        span Map data &copy;2021
+                            .gmnoprint.gm-style-cc(draggable='false' style='z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;')
+                                div(style='opacity: 0.7; width: 100%; height: 100%; position: absolute;')
+                                    div(style='width: 1px;')
+                                    div(style='background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;')
+                                div(style='position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;')
+                                    a(href='https://www.google.com/intl/en-US_US/help/terms_maps.html' target='_blank' rel='noopener' style='text-decoration: none; cursor: pointer; color: rgb(0, 0, 0);') Terms of Use
+                            .gmnoscreen(style='position: absolute; right: 0px; bottom: 0px;')
+                                div(style='font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(0, 0, 0); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);') Map data &copy;2021
+                div(style='background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;')
+                    div
+                        img(alt='' src='./landing_page_files/google_gray.svg' draggable='false' style='padding: 0px; margin: 0px; border: 0px; height: 17px; vertical-align: middle; width: 52px; user-select: none;')
+                    div(style='line-height: 20px; margin: 15px 0px;')
+                        span(style='color: rgba(0, 0, 0, 0.87); font-size: 14px;') This page can&apos;t load Google Maps correctly.
+                    table(style='width: 100%;')
+                        tr
+                            td(style='line-height: 16px; vertical-align: middle;')
+                                a(href='https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&utm_medium=degraded&utm_campaign=keyless#api-key-and-billing-errors' target='_blank' rel='noopener' style='color: rgba(0, 0, 0, 0.54); font-size: 12px;') Do you own this website?
+                            td(style='text-align: right;')
+                                button.dismissButton OK
+            .hidden.map-contact-body
+                .map-content
+                    h4.no-margin-top.font-alt Iam Here
+                    p
+                        i.fa.fa-map-marker
+                        strong Address:
+                        |  8723 Bogor, West Java
+                    p
+                        i.fa.fa-mobile
+                        strong Phone:
+                        |  87-3898-221
+                    p
+                        i.fa.fa-envelope
+                        strong Email:
+                        |  someone@company.com
+            // END MAP
     // END CONTACT
     // FOOTER
     footer.main-footer
@@ -959,111 +952,111 @@ script(src='./landing_page_files/theme.js.download')
 div(style='display: block; position: absolute; overflow: hidden; margin: 0px; padding: 0px; opacity: 0; direction: ltr; z-index: 2147483583;')
     input(type='file' name='fileatt' style='position: absolute; right: 0px; margin: 0px; padding: 0px; font-size: 480px; font-family: sans-serif; cursor: pointer;')
 
-
-script(src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js')
-script.
-    class GameOfLife {
-        constructor() {
-            this.w = this.round5(displayWidth);
-            this.h = this.round5(displayHeight);
-            this.resolution = 5;
-
-            if (/Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-
-                this.w = this.roundEven(displayWidth);
-                this.h = this.roundEven(displayHeight);
-                this.resolution = 2;
-            }
-
-            this.grid;
-            this.cols;
-            this.rows;
-        }
-
-        isMobile(){
-            return false;
-        }
-
-
-        round5(x) {
-            return (x % 5) >= 2.5 ? parseInt(x / 5) * 5 + 5 : parseInt(x / 5) * 5;
-        }
-
-        roundEven(x) {
-            return (x % 2) >= 0.5 ? parseInt(x / 2) * 2 + 2 : parseInt(x / 2) * 2;
-        }
-        setup() {
-            let canvas = createCanvas(this.w, this.h);
-            canvas.position(0,0,'absolute');
-            this.cols = this.w / this.resolution;
-            this.rows = this.h / this.resolution;
-            this.grid = this.make2DArray(this.cols, this.rows);
-            for(let i = 0; i < this.cols; i++){
-                for(let j = 0; j < this.rows; j++){
-                    this.grid[i][j] = floor(random(2));
-                }
-            }
-        }
-        make2DArray(cols, rows){
-            let arr = new Array(cols);
-            for(let i = 0; i < arr.length; i++){
-                arr[i] = new Array(rows);
-            }
-            return arr;
-        }
-        draw() {
-            background(0, 3);
-            for(let i = 0; i < this.cols; i++){
-                for(let j = 0; j < this.rows; j++){
-                    let x = i * this.resolution;
-                    let y = j * this.resolution;
-                    if(this.grid[i][j] == 1)  {
-                        fill(255, 100);
-                        noStroke();
-                        rect(x,y, this.resolution, this.resolution);
-                    }
-                }
-            }
-            let next = this.make2DArray(this.cols, this.rows);
-            //compute next based on grid
-            for(let i = 0; i < this.cols; i++){
-                for(let j = 0; j < this.rows; j++){
-                    let state = this.grid[i][j];
-                    if(i == 0 || i == this.cols - 1 || j == 0 || j == this.rows - 1){
-                        next[i][j] = state;
-                    }
-                    let sum = 0;
-                    let neighbors = this.countNeighbors(this.grid, i, j);
-                    if(state == 0 && neighbors == 3) {
-                        next[i][j] = 1;
-                    } else if(state == 1 && (neighbors < 2 || neighbors > 3)){
-                        next[i][j] = 0;
-                    } else {
-                        next[i][j] = state;
-                    }
-                }
-            }
-            this.grid = next;
-        }
-        countNeighbors(grid, x, y){
-            let sum = 0;
-            for(let i = -1; i < 2; i++){
-                for(let j = -1; j < 2; j++){
-                    let col = (x + i + this.cols) % this.cols;
-                    let row = (y + j + this.rows) % this.rows;
-                    //console.log(col + ' ' + row + ' ' + grid[col][row])
-                    sum += grid[col][row];
-                }
-            }
-            sum -= grid[x][y];
-            return sum;
-        }
-    }
-    let gol;
-    function setup() {
-        gol = new GameOfLife();
-        gol.setup();
-    }
-    function draw(){
-        gol.draw();
-    }
+//
+//script(src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js')
+//script.
+//    class GameOfLife {
+//        constructor() {
+//            this.w = this.round5(displayWidth);
+//            this.h = this.round5(displayHeight);
+//            this.resolution = 5;
+//
+//            if (/Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+//
+//                this.w = this.roundEven(displayWidth);
+//                this.h = this.roundEven(displayHeight);
+//                this.resolution = 2;
+//            }
+//
+//            this.grid;
+//            this.cols;
+//            this.rows;
+//        }
+//
+//        isMobile(){
+//            return false;
+//        }
+//
+//
+//        round5(x) {
+//            return (x % 5) >= 2.5 ? parseInt(x / 5) * 5 + 5 : parseInt(x / 5) * 5;
+//        }
+//
+//        roundEven(x) {
+//            return (x % 2) >= 0.5 ? parseInt(x / 2) * 2 + 2 : parseInt(x / 2) * 2;
+//        }
+//        setup() {
+//            let canvas = createCanvas(this.w, this.h);
+//            canvas.position(0,0,'absolute');
+//            this.cols = this.w / this.resolution;
+//            this.rows = this.h / this.resolution;
+//            this.grid = this.make2DArray(this.cols, this.rows);
+//            for(let i = 0; i < this.cols; i++){
+//                for(let j = 0; j < this.rows; j++){
+//                    this.grid[i][j] = floor(random(2));
+//                }
+//            }
+//        }
+//        make2DArray(cols, rows){
+//            let arr = new Array(cols);
+//            for(let i = 0; i < arr.length; i++){
+//                arr[i] = new Array(rows);
+//            }
+//            return arr;
+//        }
+//        draw() {
+//            background(0, 3);
+//            for(let i = 0; i < this.cols; i++){
+//                for(let j = 0; j < this.rows; j++){
+//                    let x = i * this.resolution;
+//                    let y = j * this.resolution;
+//                    if(this.grid[i][j] == 1)  {
+//                        fill(255, 100);
+//                        noStroke();
+//                        rect(x,y, this.resolution, this.resolution);
+//                    }
+//                }
+//            }
+//            let next = this.make2DArray(this.cols, this.rows);
+//            //compute next based on grid
+//            for(let i = 0; i < this.cols; i++){
+//                for(let j = 0; j < this.rows; j++){
+//                    let state = this.grid[i][j];
+//                    if(i == 0 || i == this.cols - 1 || j == 0 || j == this.rows - 1){
+//                        next[i][j] = state;
+//                    }
+//                    let sum = 0;
+//                    let neighbors = this.countNeighbors(this.grid, i, j);
+//                    if(state == 0 && neighbors == 3) {
+//                        next[i][j] = 1;
+//                    } else if(state == 1 && (neighbors < 2 || neighbors > 3)){
+//                        next[i][j] = 0;
+//                    } else {
+//                        next[i][j] = state;
+//                    }
+//                }
+//            }
+//            this.grid = next;
+//        }
+//        countNeighbors(grid, x, y){
+//            let sum = 0;
+//            for(let i = -1; i < 2; i++){
+//                for(let j = -1; j < 2; j++){
+//                    let col = (x + i + this.cols) % this.cols;
+//                    let row = (y + j + this.rows) % this.rows;
+//                    //console.log(col + ' ' + row + ' ' + grid[col][row])
+//                    sum += grid[col][row];
+//                }
+//            }
+//            sum -= grid[x][y];
+//            return sum;
+//        }
+//    }
+//    let gol;
+//    function setup() {
+//        gol = new GameOfLife();
+//        gol.setup();
+//    }
+//    function draw(){
+//        gol.draw();
+//    }
