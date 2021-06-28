@@ -168,9 +168,9 @@
     $("#typed").typed({
       strings: ["Web Development", "Database Design", "UI / UX Design", "Network Management"],
       // typing speed
-      typeSpeed: 0,
+      typeSpeed: 50,
       // time before typing starts
-      startDelay: 25,
+      startDelay: 100,
       // backspacing speed
       backSpeed: 50,
       // time before backspacing
