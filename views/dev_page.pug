@@ -16,7 +16,28 @@ div
     br
     br
     input#loginButton(type='button' value='Login')
-script(src='neural_network.js').
+script(src='matrix.js')
+script(src='nn.js')
+
+script.
+
+    let inputs = [1,1, 1, 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
+    let targets = [0.33];
+
+    let nn1 = new nn(inputs.length,10,targets.length);
+
+
+    let m1 = Matrix.fromArray(inputs);
+    let m2 = Matrix.fromArray(targets);
+    nn1.feedForward(inputs);
+    nn1.train(inputs, targets);
+    nn1.train(inputs, targets);
+    nn1.train(inputs, targets);
+
+
+
+
+
 
 script.
     let button = document.getElementById('loginButton');

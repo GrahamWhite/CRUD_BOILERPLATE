@@ -47,8 +47,8 @@ head
 
 
 
-    // white skin
-    link(href='./landing_page_files/skin-black.css' rel='stylesheet')
+    // black skin
+    //link(href='./landing_page_files/skin-black.css' rel='stylesheet')
 
 
     //Dev fonts
@@ -63,6 +63,13 @@ head
     script(type='text/javascript' charset='UTF-8' src='./landing_page_files/controls.js.download')
     script(type='text/javascript' charset='UTF-8' src='./landing_page_files/onion.js.download')
     script(type='text/javascript' charset='UTF-8' src='./landing_page_files/f.txt')
+    script.
+        let themeSwith = document.getElementById('theme_switch');
+        if(themeSwith){
+
+        }
+
+
 
 //.pace.pace-inactive
 //    .pace-progress(data-progress-text='100%' data-progress='99' style='width: 100%;')
@@ -112,12 +119,18 @@ head
 
         // End Main navbar
     // End Main Header
+
+    // Rounded switch
+    label.switch
+        input(type='checkbox' id='theme_switch')
+        span.slider.round
+
     // ABOUT ME
     section#about.block-section
         .clearfix.my-profile
             .my-pict
                 .overfly
-                    img(src="./images/me.png" style="width: 100%;")
+                    img(src="./images/me.png" style="max-width: 100%;")
                     .text-botttom
 
                         //h2.text-uppercase.color-dark.text-bold Graham White
@@ -125,9 +138,9 @@ head
             .my-desc
                 .bg-secondary.clearfix
                     .inner-text
-                        h3.color-dark.no-margin-top Hello There!
+                        h3.color-dark.no-margin-top Hello.
                         p
-                            | * THIS NEEDS REVISION !!!! Having just completed the three-year diploma program in IT Innovation and Design at Conestoga College, I am looking for my first opportunity to join the tech industry.  While I also have education and experience in food science, I came to realize that programming and design are where my passion truly lies.  Continuous learning and the opportunity to contribute in the development area are key objectives of mine.  I have taken many courses on AGILE development techniques and am able to work in a flexible environment.  I am becoming more confident in my abilities as a ___, and I believe I can make a meaningful contribution to your team.
+                            | Having just completed the three-year diploma program in IT Innovation and Design at Conestoga College, I am looking for my first opportunity to join the tech industry.  While I also have education and experience in food science, I came to realize that programming and design are where my passion truly lies.  Continuous learning and the opportunity to contribute in the development area are key objectives of mine.  I have taken many courses on AGILE development techniques and am able to work in a flexible environment.  I am becoming more confident in my abilities as a ___, and I believe I can make a meaningful contribution to your team.
 
                 .bg-dark.clearfix
                     .inner-text
@@ -155,7 +168,7 @@ head
                 li.col-sm-4.no-padding
                     .box
                         .ic
-                            img.fa(src='./landing_page_files/rds_icon.png' style='width: 2em')
+                            img.fa(src='./landing_page_files/rds_icon.png' style='width: 2em;')
                         h5.text-uppercase.color-dark Relational Database Design
                 li.col-sm-4.no-padding
                     .box
@@ -184,7 +197,7 @@ head
                             h5.text-uppercase.color-dark.text-bold IT Innovation and Design
                             p.font-alt.color-dark Conestoga College
                             p
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                | Full Stack Development with a focus on system innovation, user experience, and project development.
                             p.font-alt.color-dark   2021
                     li
                         .ic
@@ -194,7 +207,7 @@ head
                             h5.text-uppercase.color-dark.text-bold Brewmaster and Brewery Operations Management
                             p.font-alt.color-dark Niagara College
                             p
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                | Beer and Distillate production with a focus on chemistry, production methods, and current business practices
                             p.font-alt.color-dark  2016
         // EMPLOYEMNT
         // EDUCATION
@@ -215,7 +228,8 @@ head
                             h5.text-uppercase.color-dark.text-bold Brewer
                             p.font-alt.color-dark Magnotta Winery Corp.
                             p
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                | • Producing wort and beer; bottled water for third party suppliers
+                                | • Operated, maintained and cleaned the brewing facility; supported tankhouse and cellar operations
                             p.font-alt.color-dark   2017
                     li
                         .ic
@@ -225,7 +239,9 @@ head
                             h5.text-uppercase.color-dark.text-bold Assistant Brewmaster
                             p.font-alt.color-dark Barnstormer Brewing & Distilling Co.
                             p
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                | Brewed and packaged core and experimental brands for internal and LCBO release
+                                | • Designed recipes for in-house competitions and events
+                                | • Developed brewery training program for front-of-house staff
                             p.font-alt.color-dark  2016
                     li
                         .ic
@@ -235,131 +251,134 @@ head
                             h5.text-uppercase.color-dark.text-bold Ski Instructor
                             p.font-alt.color-dark Beaver Valley Ski Club
                             p
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                | • Taught skiing skills and promoted team building, for groups aged 3 to 16; created individual teaching
+                                | plans based on needs assessment
+                                | • Earned the 2015 Ski Instructor Award of Merit (awarded to one individual)
                             p.font-alt.color-dark  2012-2019
         //END EDUCATION
         // END EMPLOYEMNT
-    //    // SKILLS
-    //    .shape-bottom
-    //        .bg-secondary.block-title
-    //            .container
-    //                h2.text-uppercase.color-dark.text-bold.no-margin Skills
-    //                .title-icon
-    //                    i.fa.fa-magic
-    //    .container-medium
-    //        // SKIL CHART TOP
-    //        ul.skill.top.list-unstyled.clearfix
-    //            li.col-sm-3.col-xs-6.no-padding
-    //                .box.br-right.br-bottom
-    //                    span.chart(data-percent='96')
-    //                        span.percent 96
-    //                        canvas(height='330' width='330' style='height: 110px; width: 110px;')
-    //                    .text-uppercase.color-dark Php
-    //            li.col-sm-3.col-xs-6.no-padding
-    //                .box.br-right.br-bottom
-    //                    span.chart(data-percent='87')
-    //                        span.percent 87
-    //                        canvas(height='330' width='330' style='height: 110px; width: 110px;')
-    //                    .text-uppercase.color-dark .NET
-    //            li.col-sm-3.col-xs-6.no-padding
-    //                .box.br-right.br-bottom
-    //                    span.chart(data-percent='89')
-    //                        span.percent 89
-    //                        canvas(height='330' width='330' style='height: 110px; width: 110px;')
-    //                    .text-uppercase.color-dark MYSQL
-    //            li.col-sm-3.col-xs-6.no-padding
-    //                .box.br-bottom
-    //                    span.chart(data-percent='70')
-    //                        span.percent 70
-    //                        canvas(height='330' width='330' style='height: 110px; width: 110px;')
-    //                    .text-uppercase.color-dark ROR
-    //        // END SKIL CHART TOP
-    //        // SKIL CHART BOTTOM
-    //        ul.skill.bottom.list-unstyled.clearfix
-    //            li.col-sm-3.col-xs-6.no-padding
-    //                .box.br-right
-    //                    span.chart(data-percent='60')
-    //                        span.percent 60
-    //                        canvas(height='330' width='330' style='height: 110px; width: 110px;')
-    //                    .text-uppercase.color-dark Photoshop
-    //            li.col-sm-3.col-xs-6.no-padding
-    //                .box.br-right
-    //                    span.chart(data-percent='99')
-    //                        span.percent 99
-    //                        canvas(height='330' width='330' style='height: 110px; width: 110px;')
-    //                    .text-uppercase.color-dark HTML
-    //            li.col-sm-3.col-xs-6.no-padding
-    //                .box.br-right
-    //                    span.chart(data-percent='60')
-    //                        span.percent 60
-    //                        canvas(height='330' width='330' style='height: 110px; width: 110px;')
-    //                    .text-uppercase.color-dark CSS
-    //            li.col-sm-3.col-xs-6.no-padding
-    //                .box
-    //                    span.chart(data-percent='77')
-    //                        span.percent 77
-    //                        canvas(height='330' width='330' style='height: 110px; width: 110px;')
-    //                    .text-uppercase.color-dark BOOTSTRAP
-    //        // END SKIL CHART BOTTOM
-    //        // MORE SKILS
-    //        .title-border
-    //            h5.text-uppercase.color-dark.no-margin.text-bold MORE SKILLS
-    //        .row
-    //            .col-sm-6
-    //                ul.list-unstyled.list-progress
-    //                    li
-    //                        .text-uppercase.color-dark.title
-    //                            span Creative
-    //                            small 80%
-    //                        .progress-line
-    //                            .line(data-holdwidth='80%' style='width: 80%;')
-    //                    li
-    //                        .text-uppercase.color-dark.title
-    //                            | Leadership
-    //                            small 60%
-    //                        .progress-line
-    //                            .line(data-holdwidth='60%' style='width: 60%;')
-    //                    li
-    //                        .text-uppercase.color-dark.title
-    //                            | Communication
-    //                            small 70%
-    //                        .progress-line
-    //                            .line(data-holdwidth='70%' style='width: 70%;')
-    //            .col-sm-6
-    //                ul.list-unstyled.list-progress
-    //                    li
-    //                        .text-uppercase.color-dark.title
-    //                            | English
-    //                            small 80%
-    //                        .progress-line
-    //                            .line(data-holdwidth='80%' style='width: 80%;')
-    //                    li
-    //                        .text-uppercase.color-dark.title
-    //                            | Spanish
-    //                            small 60%
-    //                        .progress-line
-    //                            .line(data-holdwidth='60%' style='width: 60%;')
-    //                    li
-    //                        .text-uppercase.color-dark.title
-    //                            | Indonesia
-    //                            small 70%
-    //                        .progress-line
-    //                            .line(data-holdwidth='70%' style='width: 70%;')
-    //        // END MORE SKILS
+        // SKILLS
+        .shape-bottom
+            .bg-secondary.block-title
+                .container
+                    h2.text-uppercase.color-dark.text-bold.no-margin Skills
+                    .title-icon
+                        i.fa.fa-magic
+        .container-medium
+            // SKIL CHART TOP
+            ul.skill.top.list-unstyled.clearfix
+                li.col-sm-3.col-xs-6.no-padding
+                    .box.br-right.br-bottom
+                        span.chart(data-percent='96')
+                            span.percent 96
+                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
+                        .text-uppercase.color-dark Node.js / React.js / Angular.js
+                li.col-sm-3.col-xs-6.no-padding
+                    .box.br-right.br-bottom
+                        span.chart(data-percent='87')
+                            span.percent 87
+                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
+                        .text-uppercase.color-dark C# / .NET
+                li.col-sm-3.col-xs-6.no-padding
+                    .box.br-right.br-bottom
+                        span.chart(data-percent='89')
+                            span.percent 89
+                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
+                        .text-uppercase.color-dark MYSQL
+                li.col-sm-3.col-xs-6.no-padding
+                    .box.br-bottom
+                        span.chart(data-percent='70')
+                            span.percent 70
+                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
+                        .text-uppercase.color-dark PHP
+
+            // END SKIL CHART TOP
+            // SKIL CHART BOTTOM
+            ul.skill.bottom.list-unstyled.clearfix
+                li.col-sm-3.col-xs-6.no-padding
+                    .box.br-right
+                        span.chart(data-percent='60')
+                            span.percent 60
+                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
+                        .text-uppercase.color-dark Photoshop
+                li.col-sm-3.col-xs-6.no-padding
+                    .box.br-right
+                        span.chart(data-percent='99')
+                            span.percent 99
+                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
+                        .text-uppercase.color-dark HTML
+                li.col-sm-3.col-xs-6.no-padding
+                    .box.br-right
+                        span.chart(data-percent='60')
+                            span.percent 60
+                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
+                        .text-uppercase.color-dark CSS
+                li.col-sm-3.col-xs-6.no-padding
+                    .box
+                        span.chart(data-percent='77')
+                            span.percent 77
+                            canvas(height='330' width='330' style='height: 110px; width: 110px;')
+                        .text-uppercase.color-dark BOOTSTRAP
+            // END SKIL CHART BOTTOM
+            // MORE SKILS
+            .title-border
+                h5.text-uppercase.color-dark.no-margin.text-bold MORE SKILLS
+            .row
+                .col-sm-6
+                    ul.list-unstyled.list-progress
+                        li
+                            .text-uppercase.color-dark.title
+                                span Creative
+                                small 80%
+                            .progress-line
+                                .line(data-holdwidth='20%' style='width: 80%;')
+                        li
+                            .text-uppercase.color-dark.title
+                                | Communication
+                                small 60%
+                            .progress-line
+                                .line(data-holdwidth='60%' style='width: 60%;')
+                        li
+                            .text-uppercase.color-dark.title
+                                | Leadership
+                                small 70%
+                            .progress-line
+                                .line(data-holdwidth='20%' style='width: 70%;')
+                .col-sm-6
+                    ul.list-unstyled.list-progress
+                        li
+                            .text-uppercase.color-dark.title
+                                | SKILL1
+                                small 80%
+                            .progress-line
+                                .line(data-holdwidth='80%' style='width: 80%;')
+                        li
+                            .text-uppercase.color-dark.title
+                                | SKILL2
+                                small 60%
+                            .progress-line
+                                .line(data-holdwidth='60%' style='width: 60%;')
+                        li
+                            .text-uppercase.color-dark.title
+                                | SKILL3
+                                small 70%
+                            .progress-line
+                                .line(data-holdwidth='70%' style='width: 70%;')
+            // END MORE SKILS
     //        .white-space-50
-    //    // DOWNLOAD & PRVIEW BTN
-    //    .parallax-bg.bg1
-    //        .container
-    //            .padding30.text-center
-    //                a.btn.btn-flat-line.btn-default.light-font(href='https://yobithemes.com/demo/html/whoiam/black/#')
-    //                    i.fa.fa-download
-    //                    |   Download CV
-    //                span.space-inline-15.hidden-xs
-    //                a.btn.btn-flat-line.btn-default.light-font(href='https://yobithemes.com/demo/html/whoiam/black/#')
-    //                    i.fa.fa-print
-    //                    |  Print CV
-    //    // END DOWNLOAD & PRVIEW BTN
-    //// END SERVICES
+        // DOWNLOAD & PRVIEW BTN
+    .parallax-bg.bg1
+        .container
+            .padding30.text-center
+                a.btn.btn-flat-line.btn-default.light-font(href='https://yobithemes.com/demo/html/whoiam/black/#')
+                    i.fa.fa-download
+                    |   Download CV
+                span.space-inline-15.hidden-xs
+                a.btn.btn-flat-line.btn-default.light-font(href='https://yobithemes.com/demo/html/whoiam/black/#')
+                    i.fa.fa-print
+                    |  Print CV
+        // END DOWNLOAD & PRVIEW BTN
+    // END SERVICES
     //// PORTFOLIO
     //section#portfolio.block-section
     //    // PORTFOLIO TITLE

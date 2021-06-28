@@ -42,6 +42,9 @@ class nn {
         outputs.print();
         output_errors.print();
 
+        let inputs = Matrix.fromArray(inputs_garray);
+        let inputs = Matrix.fromArray(inputs_garray);
+
     }
 
     feedForward(input_array) {
